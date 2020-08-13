@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Averta Std';
+    src: url('AvertaStd-Extrabold.woff2') format('woff2'),
+        url('AvertaStd-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Std';
+    src: url('AvertaStd-Light.woff2') format('woff2'),
+        url('AvertaStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('Averta-Black.woff2') format('woff2'),
+        url('Averta-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Std';
+    src: url('AvertaStd-Thin.woff2') format('woff2'),
+        url('AvertaStd-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Std';
+    src: url('AvertaStd-Semibold.woff2') format('woff2'),
+        url('AvertaStd-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Std Extrathin';
+    src: url('AvertaStd-Extrathin.woff2') format('woff2'),
+        url('AvertaStd-Extrathin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Std';
+    src: url('AvertaStd-Regular.woff2') format('woff2'),
+        url('AvertaStd-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Std';
+    src: url('AvertaStd-Bold.woff2') format('woff2'),
+        url('AvertaStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

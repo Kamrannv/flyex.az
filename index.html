@@ -15,6 +15,8 @@
 <link href="css/plugins.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/style12.css" rel="stylesheet">
+<link href="modal.css" rel="stylesheet">
+
 
 <link href="css/imagehover.min.css" rel="stylesheet">
 </head>
@@ -45,10 +47,14 @@
 <button type="button" class="btn btn-primary" style="background-color: #f3944a;
 border-color: #f3944a;"> Sifariş et</button>
 </a>
+
 </li>
 
 </ul>
 </div>
+
+
+
 
 
 <div id="mainMenu-trigger">
@@ -70,17 +76,130 @@ border-color: #f3944a;"> Sifariş et</button>
 
 <li class="dropdown"><a href="#">Əlaqə</a></li>
 
-<li class="dropdown "><a  href="#">Daxil ol</a></li>
-<li class="dropdown" ><a  href="#">Qeydiyyat</a></li>
+<li class="main-nav"><a class="cd-signin" href="#0">Sign in</a></li>
+<!-- <li class="main-nav"><a class="cd-signup" href="#0">Sign up</a></li> -->
+
 
 </ul>
+
 </nav>
-</div>
-</div>
+
+
 
 </div>
 </div>
+
+
+
+
+</div>
+</div>
+
+
 </header>
+
+
+
+<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+    <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+        <ul class="cd-switcher">
+            <li><a href="#0">Sign in</a></li>
+            <li><a href="#0">New account</a></li>
+        </ul>
+
+        <div id="cd-login"> <!-- log in form -->
+            <form class="cd-form">
+                <p class="fieldset">
+                    <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                    <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                    <span class="cd-error-message">Error message here!</span>
+                </p>
+
+                <p class="fieldset">
+                    <label class="image-replace cd-password" for="signin-password">Password</label>
+                    <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+                    <a href="#0" class="hide-password">Hide</a>
+                    <span class="cd-error-message">Error message here!</span>
+                </p>
+
+                <p class="fieldset">
+                    <input type="checkbox" id="remember-me" checked>
+                    <label for="remember-me">Remember me</label>
+                </p>
+
+                <p class="fieldset">
+                    <input class="full-width" type="submit" value="Login">
+                </p>
+            </form>
+            
+            <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+            <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-login -->
+
+        <div id="cd-signup"> <!-- sign up form -->
+            <form class="cd-form">
+                <p class="fieldset">
+                    <label class="image-replace cd-username" for="signup-username">Username</label>
+                    <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                    <span class="cd-error-message">Error message here!</span>
+                </p>
+
+                <p class="fieldset">
+                    <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                    <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                    <span class="cd-error-message">Error message here!</span>
+                </p>
+
+                <p class="fieldset">
+                    <label class="image-replace cd-password" for="signup-password">Password</label>
+                    <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+                    <a href="#0" class="hide-password">Hide</a>
+                    <span class="cd-error-message">Error message here!</span>
+                </p>
+
+                <p class="fieldset">
+                    <input type="checkbox" id="accept-terms">
+                    <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+                </p>
+
+                <p class="fieldset">
+                    <input class="full-width has-padding" type="submit" value="Create account">
+                </p>
+            </form>
+
+            <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-signup -->
+
+        <div id="cd-reset-password"> <!-- reset password form -->
+            <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+            <form class="cd-form">
+                <p class="fieldset">
+                    <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                    <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                    <span class="cd-error-message">Error message here!</span>
+                </p>
+
+                <p class="fieldset">
+                    <input class="full-width has-padding" type="submit" value="Reset password">
+                </p>
+            </form>
+
+            <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+        </div> <!-- cd-reset-password -->
+        <a href="#0" class="cd-close-form">Close</a>
+    </div> <!-- cd-user-modal-container -->
+</div> 
+
+
+
+
+
+
+
+
+
+
 
 <section class="slideme background-grey" >
     <div class="container">
@@ -98,9 +217,9 @@ border-color: #f3944a;"> Sifariş et</button>
             <div class="portfolio-image">
             <a href="#"><img src="images/portfolio/project/31.jpg" alt=""></a>
             </div>
-            <div class="portfolio-description">
-            <a title="Paper Pouch!" data-lightbox="image" href="images/portfolio/project/31.jpg" class="btn btn-light btn-rounded">Zoom</a>
-            </div>
+            <!-- <div class="portfolio-description">
+            <a title=" <Paper Pouch!" data-lightbox="image" href="images/portfolio/project/31.jpg" class="btn btn-light btn-rounded">Zoom</a>
+            </div> -->
             </div>
             </div>
             <div class="portfolio-item img-zoom">
@@ -108,9 +227,9 @@ border-color: #f3944a;"> Sifariş et</button>
             <div class="portfolio-image">
             <a href="#"><img src="images/portfolio/project/32.jpg" alt=""></a>
             </div>
-            <div class="portfolio-description">
+            <!-- <div class="portfolio-description">
             <a title="Paper Pouch!" data-lightbox="image" href="images/portfolio/project/32.jpg" class="btn btn-light btn-rounded">Zoom</a>
-            </div>
+            </div> -->
             </div>
             </div>
             <div class="portfolio-item img-zoom">
@@ -118,9 +237,9 @@ border-color: #f3944a;"> Sifariş et</button>
             <div class="portfolio-image">
             <a href="#"><img src="images/portfolio/project/33.jpg" alt=""></a>
             </div>
-            <div class="portfolio-description">
+            <!-- <div class="portfolio-description">
             <a title="Paper Pouch!" data-lightbox="image" href="images/portfolio/project/33.jpg" class="btn btn-light btn-rounded">Zoom</a>
-            </div>
+            </div> -->
             </div>
             </div>
             <div class="portfolio-item img-zoom">
@@ -128,9 +247,9 @@ border-color: #f3944a;"> Sifariş et</button>
             <div class="portfolio-image">
             <a href="#"><img src="images/portfolio/project/34.jpg" alt=""></a>
             </div>
-            <div class="portfolio-description">
-            <a title="Paper Pouch!" data-lightbox="image" href="images/portfolio/project/34.jpg" class="btn btn-light btn-rounded">Zoom</a>
-            </div>
+                <!-- <div class="portfolio-description">
+                <a title="Paper Pouch!" data-lightbox="image" href="images/portfolio/project/34.jpg" class="btn btn-light btn-rounded">Zoom</a>
+                </div> -->
             </div>
             </div>
             
@@ -154,7 +273,7 @@ border-color: #f3944a;"> Sifariş et</button>
                         <div class="form-row">
 
                            
-                                <div class="form-group col-lg-8">
+                                <div class="form-group col-lg-12">
                                     <label>Məbləğ daxil et</label>
                                     <input type="number" class="form-control" name="zip" placeholder="Məbləğ" required>
                                     </div>
@@ -183,19 +302,19 @@ border-color: #f3944a;"> Sifariş et</button>
                         </div>
                       
                         <div class="form-now">
-                            <div class="form-group col-lg-12">
-                                <p>Nəticə: <span id="outputExchange"></span></p>
+                            <div class="form-group col-lg-12"><br />
+                                <h2 class="text-center">100</h2>
                             </div>
                         </div>
 
                         <div class="form-row">
                      
-                        <div class="form-group col-md-6">
+                        <!-- <div class="form-group col-md-6">
                 
                             <button type="submit" class="btn m-t-30 mt-3" style="background-color: #f3944a;
                             border-color: #f3944a;" >Hesabla</button>
                 
-                        </div>
+                        </div> -->
                         </div>
                     
                        
@@ -210,12 +329,6 @@ border-color: #f3944a;"> Sifariş et</button>
     </div>
        
 </section>
-
-
-
-
-
-
 
 
 
@@ -278,11 +391,11 @@ border-color: #f3944a;"> Sifariş et</button>
 
     <!-- <img class="card-img-top ih-flip-y" src="_images/1.jpg" alt="Card image cap">
     <a href="#"></a> -->
-    <div class="card-body heightover">
+    <!-- <div class="card-body heightover">
     <h3 class="card-title">Sığortalayırıq</h3>
     <p class="card-text">Lorem ipsum dolor siorem aut sint quod officia corporis aliquam molestias maiores expedita consequatur voluptas non aspernatur iusto.</p>
     
-    </div>
+    </div> -->
     </div>
 
 
@@ -299,28 +412,22 @@ border-color: #f3944a;"> Sifariş et</button>
           </div>
 
 
-    <div class="card-body heightover">
+    <!-- <div class="card-body heightover">
     <h3 class="card-title">Məhsulu qapıya qədər çatdırırıq</h3>
     <p class="card-text">Some quick example text to build on the card title and make
     up the bulk.</p>
     
+    </div> -->
     </div>
     </div>
-    </div>
- 
 
-   
     </div>
   
     </div>
-    
-    
-    
+  
     </div>
     </div>
     </section>
-
-   
 
         <section id="page-content">
             <div class="container">
@@ -330,14 +437,30 @@ border-color: #f3944a;"> Sifariş et</button>
     <div class="card">
         <div class="card-header">
         <div class="row">
-        <div class="col-6 col-md-8">
-           
-        <span class="h3" > Türkiyə-Bakı</span>
+        <div class="col-12 col-md-12">
+
+         <div style="display:flex; justify-content:space-between"> 
+
+            <div>
+                <img src="images/turk.png"  width="50px" height="50px" style="border-radius: 50%; "> 
+                <span class="h3" style="position: absolute;top: 7px;left: 68px;" > Türkiyədən çatdırılma qiymətlərimiz</span> 
+                <p>Safe money transfer using your bank account. We support
+                    Mastercard, Visa, Paypa, American Express, Visa Electron and Maestro</p>  
+                    <p>Safe money transfer using your bank account. We support
+                        Mastercard, Visa, Paypa, American Express, Visa Electron and Maestro</p> 
+            </div>
+           <figure>
+               <img src="images/aero.png" width="100px" height="100px"/>
+           </figure>
+      
+
+         </div>
+            
+        
 
        
 
-        <p>Safe money transfer using your bank account. We support
-        Mastercard, Visa, Paypa, American Express, Visa Electron and Maestro</p>
+      
         </div>
         
         </div>
@@ -522,10 +645,7 @@ border-color: #f3944a;"> Sifariş et</button>
 <div class="container">
 <div class="heading-text heading-section ">
     <h2 style="text-align: center;">Yeniliklər</h2>
-<span class="lead">The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus,
-orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id
-molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare
-orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. </span>
+
 </div>
 <div id="blog" class="grid-layout post-3-columns m-b-30" data-item="post-item">
 
@@ -535,7 +655,7 @@ orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. </s
 <a href="blog.html">
 <img alt="" src="images/blog/12.jpg">
 </a>
-<span class="post-meta-category"><a href="#">Lifestyle</a></span>
+
 </div>
 <div class="post-item-description">
  <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
@@ -556,7 +676,7 @@ Comments</a></span>
 <a href="#">
 <img alt="" src="images/blog/17.jpg">
 </a>
-<span class="post-meta-category"><a href="#">Science</a></span>
+
 </div>
 <div class="post-item-description">
 <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
@@ -577,7 +697,7 @@ Comments</a></span>
 <a href="#">
 <img alt="" src="images/blog/18.jpg">
 </a>
-<span class="post-meta-category"><a href="#">Science</a></span>
+
 </div>
 <div class="post-item-description">
 <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
@@ -636,53 +756,113 @@ Comments</a></span>
 
 
 
-<section id="page-content" class="content background-grey">
-    <div class="container">
-    <div class="row">
-    <div class="content col-lg-12">
-    <h2 style="text-align: center;">FAQ</h2>
-<div class="toggle accordion accordion-flat">
-<div class="ac-item">
-<h5 class="ac-title">Before you get started</h5>
-<div class="ac-content">
-<p>A wonderful serenity has taken possession of my entire soul, like these sweet
-mornings of spring which I enjoy with my whole heart.</p>
-<p>I am alone, and feel the charm of existence in this spot, which was created for
-the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the
-exquisite sense of mere tranquil existence, that I neglect my talents. I should
-be incapable of drawing a single stroke at the present moment; and yet I feel
-that I never was a greater artist than now. </p>
-</div>
-</div>
- <div class="ac-item">
-<h5 class="ac-title">Layout and design options</h5>
-<div class="ac-content">
-<p>When, while the lovely valley teems with vapour around me, and the meridian sun
-strikes the upper surface of the impenetrable foliage of my trees, and but a few
-stray gleams steal into the inner sanctuary.</p>
-<p>I throw myself down among the tall grass by the trickling stream; and, as I lie
-close to the earth, a thousand unknown plants are noticed by me</p>
-</div>
-</div>
-<div class="ac-item">
-<h5 class="ac-title">Compatibility with premium plugins</h5>
-<div class="ac-content">
-<p>As it floats around us in an eternity of bliss; and then, my friend, when
-darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and
-absorb its power, like the form of a beloved mistress</p>
-<p>I often think with longing, Oh, would I could describe these conceptions, could
-impress upon paper all that is living so full and warm within me, that it might
-be the mirror of my soul, as my soul is the mirror of the infinite God! O my
-friend — but it is too much for my strength — I sink under the weight of the
-splendour of these visions!”</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-    </div>
+<section>
+                            <div class="accordion-wrapper section-space--ptb_100">
+                                <div class="container">
+                                <div class="row">
+                                <div class="col-lg-12">
+                                
+                                    <div class="heading-text heading-section ">
+                                        <h2 style="text-align: center;">Sual-cavab</h2>
+                                    
+                                    </div>
+                                
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-lg-6">
+                                <div class="faq-wrapper  section-space--mt_40">
+                                <div id="accordion">
+                            
+                         
+                                <div class="card">
+                                <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                <div class="collapsed flexity" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Şirkət nə zamandan fəaliyyət göstərir?<span> <i class="fas fa-chevron-down"></i>
+                               </span>
+                            </div>
+                                </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                <p>Bu ildən fəaliyyətə başlayıb.</p>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                <div class="collapsed flexity" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                               Neçə günə çatdırılma həyata keçirilir? <span> <i class="fas fa-chevron-down"></i>
+                              </span>
+                            </div>
+                                </h5>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                <p>Təxminən 15 gün ərzində təslimat edilir.</p>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-6">
+                                
+                                <div class="toggles-wrapper section-space--mt_40">
+                                <div class="faq-wrapper">
+                                <div id="faq-toggles">
+                              
+                                
 
+                                <div class="card">
+                                <div class="card-header" id="faq_4">
+                                <h5 class="mb-0">
+                                <div class="collapsed flexity" data-toggle="collapse" data-target="#faq_four" aria-expanded="false" aria-controls="faq_four">
+                               Sığorta nə formada həyata keçirilir? <span> <i class="fas fa-chevron-down"></i>
+                               </span>
+                            </div>
+                                </h5>
+                                </div>
+                                <div id="faq_four" class="collapse" aria-labelledby="faq_4" data-parent="#faq-toggles">
+                                <div class="card-body">
+                                <p>Saxsı qablar istisna olmaqla qalan malları sığorta edirik.</p>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <div class="card-header" id="faq_5">
+                                <h5 class="mb-0">
+                                <div class="collapsed flexity" data-toggle="collapse" data-target="#faq_five" aria-expanded="false" aria-controls="faq_five">
+                                Çatdırılma neçə günə həyata keçir? <span> <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </div>
+                                </h5>
+                                </div>
+                                <div id="faq_five" class="collapse" aria-labelledby="faq_5" data-parent="#faq-toggles">
+                                <div class="card-body">
+                                <p>3 günə.</p>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+    
 </section>
+
+
+
+
+
+
+ 
 
 <footer id="footer">
 <div class="footer-content">
@@ -753,10 +933,47 @@ splendour of these visions!”</p>
 
 <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
 
+<!-- <script>
+    // Plugin options and our code
+$("#modal_trigger").leanModal({
+    top: 100,
+    overlay: 0.6,
+    closeButton: ".modal_close"
+});
+
+$(function() {
+    // Calling Login Form
+    $("#login_form").click(function() {
+            $(".social_login").hide();
+            $(".user_login").show();
+            return false;
+    });
+
+    // Calling Register Form
+    $("#register_form").click(function() {
+            $(".social_login").hide();
+            $(".user_register").show();
+            $(".header_title").text('Register');
+            return false;
+    });
+
+    // Going back to Social Forms
+    $(".back_btn").click(function() {
+            $(".user_login").hide();
+            $(".user_register").hide();
+            $(".social_login").show();
+            $(".header_title").text('Login');
+            return false;
+    });
+});
+
+</script> -->
+
 <script src="js/jquery.js"></script>
 <script src="js/plugins.js"></script>
-
+<script src="js/modal.js"></script>
 <script src="js/functions.js"></script>
+
 </body>
 
 <!-- Mirrored from inspirothemes.com/polo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 18:57:38 GMT -->

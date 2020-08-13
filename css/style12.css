@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Averta';
+    src: url('../fonts/avertaweb1/avertaweb/AvertaStd-Regular.woff');
+    
+    font-style: normal;
+    font-weight: 900;
+
+}
+
+div,p,li,h1,h2,h3,h4,a,span{
+    font-family: 'Averta';
+}
+
+
+
 .principle{
     background:#fff;
     text-align: center;
@@ -65,12 +80,12 @@
 }
 .textclass{
     font-size: 16px;
-    font-family: 'Lato';
+    
 }
 .headclass{
     font-size: 20px;
     font-weight: 700;
-    font-family: 'Lato';
+  
 }
 #mainMenu ul > li:last-child > a:before {
 content: '';
@@ -135,7 +150,7 @@ transform:translateY(-50%);
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: #2250FC;
+  
     overflow: hidden;
     width: 100%;
     height:0;
@@ -233,4 +248,122 @@ transform:translateY(-50%);
         line-height: 56px;
         margin-bottom: 30px;
     }
+}
+
+
+.faq-wrapper .card-header h5 div{
+    border: none;
+    width: 100% !important;
+    text-align: left;
+    color: #000000;
+    padding: 20px 30px;
+    position: relative;
+    overflow-wrap: break-word;
+    white-space: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #ffffff;
+}
+.btn-link{
+    text-decoration: none;
+}
+.faq-wrapper .card-header{
+    padding: 0;
+    border-bottom: 0;
+    background-color: #ffffff;
+}
+.flexity{
+    display: flex;
+    justify-content: space-between;
+}
+.panelcard{
+    border-radius: 10px;
+}
+.panelcard-body{
+    padding: 1.8rem 2rem;
+    background-color: #2250fa;
+    color: white;
+    border-radius: 10px;
+}
+.balance-count{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.counter{
+    font-size: 45px;
+    font-weight: 700;
+}
+sup{
+    font-size: 25px;
+}
+.balance-count-texted{
+    display: flex;
+    justify-content: space-between;
+}
+.text-delivery p{
+color: white;
+width: 260px;
+
+}
+b{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.text-delivery{
+    display: flex;
+    justify-content:space-between;
+}
+.btn-effect{
+    width: 119px;
+    border-color: #fff;
+    color: #fff;
+   
+}
+.border-btn{
+    border:1px solid white; 
+    padding: 9px 4px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+}
+.border-btn a:hover{
+    background-color: red;
+}
+.btn-effect-flex{
+     display: flex;
+     justify-content: space-between;
+}
+.form-size{
+    width: 33%;
+}
+.card-panel-y{
+    background-color: #fff;
+    border-bottom: 1px solid #e6e8eb;
+    font-weight: 600;
+    border-radius: 10px;
+}
+th{
+    background-color: #454d55;
+    border-color: whitesmoke;
+    color: whitesmoke;
+}
+
+.tab-pane-flex{
+    width:70%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.tab-pane-flex2{
+    width:26%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
 }
