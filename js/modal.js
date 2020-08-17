@@ -154,3 +154,14 @@ $('#cody-info').hide();
 
 
 
+function changeValue(dropdown) {
+	var option = dropdown.options[dropdown.selectedIndex].value,
+	field = document.getElementById('id_gov_id');
+
+	if (option == 'AZE') {
+		field.value = field.value.substr(0, 2); // before reducing the maxlength, make sure it contains at most two characters; you could also reset the value altogether
+		field.maxLength = 8;
+	} else {
+		field.maxLength = 6;
+	}
+}

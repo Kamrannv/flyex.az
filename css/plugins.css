@@ -17140,3 +17140,7 @@ a.text-dark:hover {
 .fas {
     font-weight: 900
 }
+dl, ol, ul
+{
+    list-style:none;
+}

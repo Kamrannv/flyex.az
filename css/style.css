@@ -1508,7 +1508,7 @@ section.dark {
     float: left;
     border: 0;
     transition: all 0.3s ease;
-    margin-left: 6px;
+    /* margin-left: 6px; */
     position: relative;
 }
 #mainMenu nav > ul > li > a {

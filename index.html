@@ -76,8 +76,8 @@ border-color: #f3944a;"> Sifariş et</button>
 
 <li class="dropdown"><a href="#">Əlaqə</a></li>
 
-<li class="main-nav"><a class="cd-signin" href="#0">Sign in</a></li>
-<!-- <li class="main-nav"><a class="cd-signup" href="#0">Sign up</a></li> -->
+<li class="main-nav" style="margin-right:0"><a class="cd-signin" href="#0">Daxil ol</a></li>
+<li class="main-nav"><a class="cd-signup" href="#0">Qeydiyyat</a></li> 
 
 
 </ul>
@@ -103,28 +103,31 @@ border-color: #f3944a;"> Sifariş et</button>
 <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
     <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
         <ul class="cd-switcher">
-            <li><a href="#0">Sign in</a></li>
-            <li><a href="#0">New account</a></li>
+            <li><a href="#0">Daxil ol</a></li>
+            <li><a href="#0">Qeydiyyat</a></li>
         </ul>
 
         <div id="cd-login"> <!-- log in form -->
             <form class="cd-form">
-                <p class="fieldset">
-                    <label class="image-replace cd-email" for="signin-email">E-mail</label>
-                    <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
-
-                <p class="fieldset">
-                    <label class="image-replace cd-password" for="signin-password">Password</label>
-                    <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
-                    <a href="#0" class="hide-password">Hide</a>
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
+                <div class="form-group col-md-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email " required>
+                    <span class="cd-error-message">Yanlış!</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div class="input-group show-hide-password">
+                        <input class="form-control" name="password" placeholder="Şifrəni daxil edin" type="password" required>
+                        <div class="input-group-append">
+                        <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span>
+                        <span class="cd-error-message">Yanlış!</span>
+                        </div>
+                        </div>
+                        </div>
+                    
+              
 
                 <p class="fieldset">
                     <input type="checkbox" id="remember-me" checked>
-                    <label for="remember-me">Remember me</label>
+                    <label for="remember-me">Yadda saxla</label>
                 </p>
 
                 <p class="fieldset">
@@ -132,39 +135,105 @@ border-color: #f3944a;"> Sifariş et</button>
                 </p>
             </form>
             
-            <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+            <p class="cd-form-bottom-message"><a href="#0">Şifrəni unutdum</a></p>
             <!-- <a href="#0" class="cd-close-form">Close</a> -->
         </div> <!-- cd-login -->
 
         <div id="cd-signup"> <!-- sign up form -->
             <form class="cd-form">
-                <p class="fieldset">
-                    <label class="image-replace cd-username" for="signup-username">Username</label>
-                    <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
+               
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                       
+                        <input type="text" class="form-control" name="name" placeholder="Ad" required>
+                    <span class="cd-error-message">Yanlış!</span>
+                    </div>
+                
+                    <div class="form-group col-md-6">
+                        
+                        <input type="text" class="form-control" name="name" placeholder="Soyad" required>
+                    <span class="cd-error-message">Yanlış!</span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  
+                <select class="form-control" name="gender" required>
+                    <option value="">Cinsini seç</option>
+                    <option>Qadın</option>
+                    <option>Kişi</option>
+                    </select>
+                </div>
+               
+                <div class="form-group col-md-6">
+                   
+                    <input class="form-control" type="date" name="dateofbirth" required>
+                    </div>
+            </div>
 
-                <p class="fieldset">
-                    <label class="image-replace cd-email" for="signup-email">E-mail</label>
-                    <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Email " required>
+                </div>
+                <div class="form-group col-md-6">
+                    <div class="input-group show-hide-password">
+                    <input class="form-control" name="password" placeholder="Şifrəni daxil edin" type="password" required>
+                    <div class="input-group-append">
+                    <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span>
+                    </div>
+                    </div>
+                    </div>
+            </div>
 
-                <p class="fieldset">
-                    <label class="image-replace cd-password" for="signup-password">Password</label>
-                    <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
-                    <a href="#0" class="hide-password">Hide</a>
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
+              <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <select name="gov_id_prefix" class="small-select" id="id_gov_id_prefix" onchange="changeValue(this)">
+                        <option value="AZE" selected="">AZE</option>
+                        <option value="AA">AA</option>
+                        </select>
+                  </div>
+
+                  <div class="form-group col-md-8">
+                    <input type="text" name="gov_id" maxlength="8" class="form-control iden-card pl-2" required="" id="id_gov_id" im-insert="true" placeholder="Seriya nömrəsi">
+                 
+              </div>
+            </div>
+
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" maxlength="7" class="form-control iden-card pl-2" required="" id="id_gov_id" im-insert="true" placeholder="FIN">
+                 
+                  </div>
+                  <div class="form-group col-md-2">
+                    <select name="phone_prefix" class="small-select" id="id_phone_prefix">
+                        <option value="1">+99450</option>
+                        <option value="2">+99451</option>
+                        <option value="3">+99455</option>
+                        <option value="4">+99477</option>
+                        <option value="5">+99470</option>
+                        </select>
+                </div>
+                <div class=" form-group col-md-4">
+                    <input type="text" name="phone" maxlength="7" class="form-control pl-2" required="" id="id_phone" im-insert="true" placeholder="Nömrəni daxil edin">
+                        
+                </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="text" name="phone" maxlength="7" class="form-control pl-2" required="" id="id_phone" im-insert="true" placeholder="Ünvanı daxil edin">
+                     
+                  </div>
+              </div>
 
                 <p class="fieldset">
                     <input type="checkbox" id="accept-terms">
-                    <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+                    <label for="accept-terms"><a href="#0">Şərtlərlə </a>razıyam </label>
                 </p>
 
                 <p class="fieldset">
-                    <input class="full-width has-padding" type="submit" value="Create account">
+                    <input class="full-width has-padding" type="submit" value="Hesab yarat">
                 </p>
+            </div>
             </form>
 
             <!-- <a href="#0" class="cd-close-form">Close</a> -->
@@ -378,11 +447,11 @@ border-color: #f3944a;"> Sifariş et</button>
     <div class="col-lg-12">
     <h2 style="text-align: center;">Üstünlüklərimiz</h2>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-4">
     <div class="card">
 
         <div class="ciontainer">
-            <img src="_images/1.jpg" alt="Avatar" class="imaige">
+            <img src="_images/2.jpg" alt="Avatar" class="imaige">
             <div class="moverlay">
               <a href="#"> <p class="teixt">Sığorta bizdən</p></a>
             </div>
@@ -400,7 +469,7 @@ border-color: #f3944a;"> Sifariş et</button>
 
 
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-4">
     <div class="card">
 
         
@@ -419,7 +488,34 @@ border-color: #f3944a;"> Sifariş et</button>
     
     </div> -->
     </div>
+
+    
+
     </div>
+
+    <div class="col-lg-4">
+        <div class="card">
+    
+            
+            <div class="ciontainer">
+                <img src="_images/2.jpg" alt="Avatar" class="imaige">
+                <div class="moverlay">
+                  <a href="№"><p class="teixt">Məhsul qapıda</p></a>
+                </div>
+              </div>
+    
+    
+        <!-- <div class="card-body heightover">
+        <h3 class="card-title">Məhsulu qapıya qədər çatdırırıq</h3>
+        <p class="card-text">Some quick example text to build on the card title and make
+        up the bulk.</p>
+        
+        </div> -->
+        </div>
+    
+        
+    
+        </div>
 
     </div>
   
@@ -439,19 +535,14 @@ border-color: #f3944a;"> Sifariş et</button>
         <div class="row">
         <div class="col-12 col-md-12">
 
-         <div style="display:flex; justify-content:space-between"> 
+         <div> 
 
             <div>
-                <img src="images/turk.png"  width="50px" height="50px" style="border-radius: 50%; "> 
+                <img src="images/turk.png"  width="70px" height="0px" style="border-radius: 50%; "> 
                 <span class="h3" style="position: absolute;top: 7px;left: 68px;" > Türkiyədən çatdırılma qiymətlərimiz</span> 
-                <p>Safe money transfer using your bank account. We support
-                    Mastercard, Visa, Paypa, American Express, Visa Electron and Maestro</p>  
-                    <p>Safe money transfer using your bank account. We support
-                        Mastercard, Visa, Paypa, American Express, Visa Electron and Maestro</p> 
+                
             </div>
-           <figure>
-               <img src="images/aero.png" width="100px" height="100px"/>
-           </figure>
+       
       
 
          </div>
