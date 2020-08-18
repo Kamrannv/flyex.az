@@ -165,3 +165,27 @@ function changeValue(dropdown) {
 		field.maxLength = 6;
 	}
 }
+
+
+
+
+
+function myFunction() {
+	var x = document.getElementById("myInput");
+	if (x.type === "password") {
+	  x.type = "text";
+	} else {
+	  x.type = "password";
+	}
+  }
+
+  
+
+function yourFunction() {
+	var x = document.getElementById("password-field");
+	if (x.type === "password") {
+	  x.type = "text";
+	} else {
+	  x.type = "password";
+	}
+  }

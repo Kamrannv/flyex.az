@@ -92,6 +92,8 @@ xcody-info
   }
 }
 
+
+
 /* -------------------------------- 
 
 Main components 
@@ -142,7 +144,7 @@ header[role=banner]::after {
 
 .main-nav {
   float: right;
-  margin-right: 5%;
+  
   width: 44px;
   height: 100%;
   background: url("../img/cd-icon-menu.svg") no-repeat center center;
@@ -171,8 +173,8 @@ header[role=banner]::after {
   height: 50px;
   line-height: 50px;
   padding-left: 5%;
-  background: #292a34;
-  border-top: 1px solid #3b3d4b;
+  /* background: #292a34; */
+  /* border-top: 1px solid #3b3d4b; */
   color: #FFF;
 }
 @media only screen and (min-width: 768px) {
@@ -213,9 +215,9 @@ header[role=banner]::after {
     background: transparent;
   }
   .main-nav a.cd-signin, .main-nav a.cd-signup {
-    padding: .6em 1em;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 50em;
+   
+  
+ 
   }
   .main-nav a.cd-signup {
     
@@ -545,3 +547,22 @@ xsigin/signup popup
 #cd-login.is-selected, #cd-signup.is-selected, #cd-reset-password.is-selected {
   display: block;
 }
+
+
+
+.shops-container .shop-icon {
+  margin-bottom: 25px;
+  display: block;
+
+}
+
+
+
+
+
+
+
+
+
+
+

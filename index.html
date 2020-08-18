@@ -31,7 +31,7 @@
 <div id="logo">
 <a href="index.html">
     
-<span class="logo-default"> <img src="_images/logom.jpeg" width="170px" height="70px" style="margin-bottom: 15px;"/></span>
+<span class="logo-default"> <img src="_images/logom.jpeg" width="110px" height="60px" style="margin-bottom: 15px;"/></span>
 <span class="logo-dark"><img src="_images/logob.jpeg" width="250px" height="150px"/></span>
 </a>
 </div>
@@ -39,16 +39,31 @@
 
 
 
-<div class="header-extras">
-<ul>
-<li>
-<a href="#"> 
+<div class="header-extras" >
+<ul style="display: flex; margin-top:16%;">
 
-<button type="button" class="btn btn-primary" style="background-color: #f3944a;
-border-color: #f3944a;"> Sifariş et</button>
+
+
+<li class="main-nav" >
+    <a class="cd-signin" href="#0">
+        <button type="button" class="btn btn-primary" style="background-color: #f3944a;
+border-color: #f3944a;">Daxil ol</button>
 </a>
-
 </li>
+<li class="main-nav">
+    <a class="cd-signup" href="#0">
+        <button type="button" class="btn btn-primary" style="background-color: #f3944a;
+        border-color: #f3944a;"> Qeydiyyat</button></a>
+</li> 
+
+<!-- <li>
+    <a href="#"> 
+    
+    <button type="button" class="btn btn-primary" style="background-color: #f3944a;
+    border-color: #f3944a;"> Sifariş et</button>
+    </a>
+    
+    </li> -->
 
 </ul>
 </div>
@@ -72,12 +87,10 @@ border-color: #f3944a;"> Sifariş et</button>
 
 
  
-<li class="dropdown"><a href="#">Mağazalar</a></li>
+<li class="dropdown"><a href="shops.html">Mağazalar</a></li>
 
-<li class="dropdown"><a href="#">Əlaqə</a></li>
+<li class="dropdown"><a href="contact.html">Əlaqə</a></li>
 
-<li class="main-nav" style="margin-right:0"><a class="cd-signin" href="#0">Daxil ol</a></li>
-<li class="main-nav"><a class="cd-signup" href="#0">Qeydiyyat</a></li> 
 
 
 </ul>
@@ -115,17 +128,20 @@ border-color: #f3944a;"> Sifariş et</button>
                     </div>
                     <div class="form-group col-md-12">
                         <div class="input-group show-hide-password">
-                        <input class="form-control" name="password" placeholder="Şifrəni daxil edin" type="password" required>
+                        <input class="form-control" id="myInput" name="password" placeholder="Şifrəni daxil edin" type="password" required>
+                        
                         <div class="input-group-append">
-                        <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span>
+                           <!-- <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span> -->
                         <span class="cd-error-message">Yanlış!</span>
                         </div>
+                        
                         </div>
                         </div>
-                    
-              
-
+                    <p class="fieldset">
+                        <input type="checkbox" onclick="myFunction()"> Şifrəni göstər  
+                    </p>
                 <p class="fieldset">
+                    
                     <input type="checkbox" id="remember-me" checked>
                     <label for="remember-me">Yadda saxla</label>
                 </p>
@@ -177,9 +193,11 @@ border-color: #f3944a;"> Sifariş et</button>
                 </div>
                 <div class="form-group col-md-6">
                     <div class="input-group show-hide-password">
-                    <input class="form-control" name="password" placeholder="Şifrəni daxil edin" type="password" required>
+                    <input id="password-field" class="form-control" name="password" placeholder="Şifrəni daxil edin" type="password" required>
                     <div class="input-group-append">
-                    <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span>
+                    <!-- <span class="input-group-text" toggle="#password-field"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span>
+                    -->
+                   
                     </div>
                     </div>
                     </div>
@@ -205,16 +223,10 @@ border-color: #f3944a;"> Sifariş et</button>
                  
                   </div>
                   <div class="form-group col-md-2">
-                    <select name="phone_prefix" class="small-select" id="id_phone_prefix">
-                        <option value="1">+99450</option>
-                        <option value="2">+99451</option>
-                        <option value="3">+99455</option>
-                        <option value="4">+99477</option>
-                        <option value="5">+99470</option>
-                        </select>
+                    <input type="text" disabled="disabled" name="number" class="form-control pl-2" required="" im-insert="true" id="id_phone" placeholder="+994">
                 </div>
                 <div class=" form-group col-md-4">
-                    <input type="text" name="phone" maxlength="7" class="form-control pl-2" required="" id="id_phone" im-insert="true" placeholder="Nömrəni daxil edin">
+                    <input type="text" name="phone" maxlength="9" class="form-control pl-2" required="" id="id_phone" im-insert="true" placeholder="Nömrəni daxil edin">
                         
                 </div>
               </div>
@@ -225,10 +237,15 @@ border-color: #f3944a;"> Sifariş et</button>
                   </div>
               </div>
 
+              <p class="fieldset">
+                <input type="checkbox" onclick="yourFunction()"> Şifrəni göstər  
+            </p>
+
                 <p class="fieldset">
                     <input type="checkbox" id="accept-terms">
                     <label for="accept-terms"><a href="#0">Şərtlərlə </a>razıyam </label>
                 </p>
+
 
                 <p class="fieldset">
                     <input class="full-width has-padding" type="submit" value="Hesab yarat">
@@ -278,7 +295,7 @@ border-color: #f3944a;"> Sifariş et</button>
 
       <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">    
         
-            <div class="container">
+            <div class="contaner">
        
             <div class="carousel carousel-promotion m-b-40" data-items="1" data-margin="40" data-loop="true" data-autoplay="true">
             <div class="portfolio-item img-zoom">
@@ -598,9 +615,9 @@ border-color: #f3944a;"> Sifariş et</button>
     <div class="input-group">
     <label style="width: 100%;">
         <select class="form-control" name="gender" required>
-            <option value="">Şəhər seç</option>
-            <option>İstanbul</option>
-            <option>Bakı</option>
+            <option >Ölkə seç</option>
+            <option selected value="Türkiyə">Türkiyə</option>
+            <option>Azərbaycan</option>
             
             </select>
     </label>
@@ -612,9 +629,9 @@ border-color: #f3944a;"> Sifariş et</button>
     <div class="input-group">
         <label style="width: 100%;">
             <select class="form-control" name="gender" required>
-                <option value="">Şəhər seç</option>
-                <option>İstanbul</option>
-                <option>Bakı</option>
+                <option value="">Valyuta seç</option>
+                <option>Dollar</option>
+                <option>TRY</option>
                 
                 </select>
         </label>
@@ -639,68 +656,12 @@ border-color: #f3944a;"> Sifariş et</button>
 
         </div>
         </div>
-
-
-        <div class=" col-lg-4 col-md-12">
-
-            <div class="input-group">
-                <label>
-                    <input type="text" class="form-control inputText" id="weight" placeholder="En">
-                    
-                </label>
-                <div class="input-group-btn">
-                    <div class="dropdown bootstrap-select form-control" style=" width: 53px; border-left: none; margin-left: 4px;"><select class="selectpicker form-control" id="weight-type" tabindex="-98">
-                        <option value="kq">sm</option>
-                        <option value="qram">m</option>
-                    </select>          </div>
-            </div>
-
-        </div>
-        </div>
-
-
-        
-        <div class=" col-lg-4 col-md-12">
-
-            <div class="input-group">
-                <label>
-                    <input type="text" class="form-control inputText" id="weight" placeholder="Hündürlük">
-                    
-                </label>
-                <div class="input-group-btn">
-                    <div class="dropdown bootstrap-select form-control" style=" width: 53px; border-left: none; margin-left: 4px;"><select class="selectpicker form-control" id="weight-type" tabindex="-98">
-                        <option value="kq">sm</option>
-                        <option value="qram">m</option>
-                    </select>          </div>
-            </div>
-
-        </div>
-        </div>
-
           
         <div class="col-lg-4 col-md-12">
 
             <div class="input-group">
                 <label>
-                    <input type="text" class="form-control inputText" id="weight" placeholder="Uzunluq">
-                    
-                </label>
-                <div class="input-group-btn">
-                    <div class="dropdown bootstrap-select form-control" style=" width: 53px; border-left: none; margin-left: 4px;"><select class="selectpicker form-control" id="weight-type" tabindex="-98">
-                        <option value="kq">sm</option>
-                        <option value="qram">m</option>
-                    </select>          </div>
-            </div>
-
-        </div>
-        </div>
-
-          
-        <div class="col-lg-4 col-md-12">
-
-            <div class="input-group">
-                <label>
-                    <input type="number" class="form-control inputText" id="weight" placeholder="Bağlama sayı">
+                    <input type="number" class="form-control inputText" id="weight" placeholder="Məbləğ">
                     
                 </label>
               
@@ -810,7 +771,7 @@ Comments</a></span>
 <section class="p-t-60">
 <div class="container">
 <div class="heading-text heading-section text-center">
-    <h2 style="text-align: center;">Partnyorlar</h2>
+    <h2 style="text-align: center;">Mağazalar</h2>
 <span class="lead">Our awesome clients we've had the pleasure to work with! </span>
  </div>
 <div class="carousel client-logos" data-items="6" data-items-sm="4" data-items-xs="3" data-items-xxs="2" data-margin="20" data-arrows="false" data-autoplay="true" data-autoplay="3000" data-loop="true">
