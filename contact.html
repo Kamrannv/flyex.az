@@ -22,55 +22,52 @@
 </head>
 <body>
 
-    <div class="body-inner">
+<div class="body-inner">
+    
+<div id="topbar" class="dark topbar-fullwidth">
+    <div class="container">
+    <div class="row">
 
-        <header id="header" class="header-always-fixed header-sticky sticky-active">
+        <div class="col-md-6 d-none d-sm-block">
+            <div class="social-icons social-icons-colored-hover">
+            <ul>
+            <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-google"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="col-md-6">
+    <ul class="top-menu main-nav">
+    <li><a class="cd-signin" href="#0">Daxil ol</a></li>
+    <li><a class="cd-signup" href="#0">Qeydiyyat</a></li>
+   
+    </ul>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <header id="header" class="white" data-fullwidth="true">
         <div class="header-inner">
         <div class="container">
         
         <div id="logo">
         <a href="index.html">
-            
-        <span class="logo-default"> <img src="_images/logom.jpeg" width="110px" height="60px" style="margin-bottom: 15px;"/></span>
-        <span class="logo-dark"><img src="_images/logob.jpeg" width="250px" height="150px"/></span>
+        <span class="logo-default">Flyex.az</span>
+        <span class="logo-dark">Flyex.az</span>
         </a>
         </div>
         
         
-        
-        
-        <div class="header-extras" >
-        <ul style="display: flex; margin-top:16%;">
-        
-        
-        
-        <li class="main-nav" >
-            <a class="cd-signin" href="#0">
-                <button type="button" class="btn btn-primary" style="background-color: #f3944a;
-        border-color: #f3944a;">Daxil ol</button>
-        </a>
-        </li>
-        <li class="main-nav">
-            <a class="cd-signup" href="#0">
-                <button type="button" class="btn btn-primary" style="background-color: #f3944a;
-                border-color: #f3944a;"> Qeydiyyat</button></a>
-        </li> 
-        
-        <!-- <li>
-            <a href="#"> 
-            
-            <button type="button" class="btn btn-primary" style="background-color: #f3944a;
-            border-color: #f3944a;"> Sifariş et</button>
-            </a>
-            
-            </li> -->
-        
-        </ul>
+        <div id="search"><a id="btn-search-close" class="btn-search-close" aria-label="Close search form"><i class="icon-x"></i></a>
+        <form class="search-form" action="https://inspirothemes.com/polo/search-results-page.html" method="get">
+        <input class="form-control" name="q" type="text" placeholder="Type & Search..." />
+        <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
+        </form>
         </div>
-        
-        
-        
-        
         
         <div id="mainMenu-trigger">
         <a class="lines-button x"><span class="lines"></span></a>
@@ -78,208 +75,209 @@
         
         
         <div id="mainMenu">
-        <div class="container">
-        <nav>
-        
-        <ul>
-            <li class=""><a href="index.html">Ana səhifə</a></li>
-        <li><a href="about.html">Haqqımızda</a></li>
-        
-        
-         
-        <li class="dropdown"><a href="#">Mağazalar</a></li>
-        
-        <li class="dropdown"><a href="#">Əlaqə</a></li>
-        
-        
-        
-        </ul>
-        
-        </nav>
-        
-        
+            <div class="container">
+            <nav>
+            
+            <ul>
+                <li class=""><a href="index.html">Ana səhifə</a></li>
+            <li><a href="about.html">Haqqımızda</a></li>
+            
+            
+             
+            <li ><a href="shops.html">Mağazalar</a></li>
+            
+            <li><a href="contact.html">Əlaqə</a></li>
+            
+            <li>
+                <a href="#"> 
+                
+                <button type="button" class="btn btn-primary" style="background-color: #f3944a;
+                border-color: #f3944a;"> Sifariş et</button>
+                </a>
+                </li>
+            
+            </ul>
+            
+            </nav>
+            
+            
+            
+            </div>
+            </div>
         
         </div>
         </div>
-        
-        
-        
-        
-        </div>
-        </div>
-        
-        
         </header>
         
         
         
-        <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
-            <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
-                <ul class="cd-switcher">
-                    <li><a href="#0">Daxil ol</a></li>
-                    <li><a href="#0">Qeydiyyat</a></li>
-                </ul>
         
-                <div id="cd-login"> <!-- log in form -->
-                    <form class="cd-form">
-                        <div class="form-group col-md-12">
-                            <input type="email" class="form-control" name="email" placeholder="Email " required>
-                            <span class="cd-error-message">Yanlış!</span>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <div class="input-group show-hide-password">
-                                <input class="form-control" id="myInput" name="password" placeholder="Şifrəni daxil edin" type="password" required>
-                                
-                                <div class="input-group-append">
-                                   <!-- <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span> -->
-                                <span class="cd-error-message">Yanlış!</span>
-                                </div>
-                                
-                                </div>
-                                </div>
-                            <p class="fieldset">
-                                <input type="checkbox" onclick="myFunction()"> Şifrəni göstər  
-                            </p>
-                        <p class="fieldset">
-                            
-                            <input type="checkbox" id="remember-me" checked>
-                            <label for="remember-me">Yadda saxla</label>
-                        </p>
-        
-                        <p class="fieldset">
-                            <input class="full-width" type="submit" value="Login">
-                        </p>
-                    </form>
-                    
-                    <p class="cd-form-bottom-message"><a href="#0">Şifrəni unutdum</a></p>
-                    <!-- <a href="#0" class="cd-close-form">Close</a> -->
-                </div> <!-- cd-login -->
-        
-                <div id="cd-signup"> <!-- sign up form -->
-                    <form class="cd-form">
-                       
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                               
-                                <input type="text" class="form-control" name="name" placeholder="Ad" required>
-                            <span class="cd-error-message">Yanlış!</span>
-                            </div>
+<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+    <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+        <ul class="cd-switcher">
+            <li><a href="#0">Daxil ol</a></li>
+            <li><a href="#0">Qeydiyyat</a></li>
+        </ul>
+
+        <div id="cd-login"> <!-- log in form -->
+            <form class="cd-form">
+                <div class="form-group col-md-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email " required>
+                    <span class="cd-error-message">Yanlış!</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div >
+                            <input id="password-field" type="password" class="form-control" name="password" placeholder="Şifrə">
+                            <i class="toggle-password fa fa-fw fa-eye-slash"></i>
+                        <div class="input-group-append">
+                           <!-- <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span> -->
+                        <span class="cd-error-message">Yanlış!</span>
+                        </div>
                         
-                            <div class="form-group col-md-6">
-                                
-                                <input type="text" class="form-control" name="name" placeholder="Soyad" required>
-                            <span class="cd-error-message">Yanlış!</span>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                          
-                        <select class="form-control" name="gender" required>
-                            <option value="">Cinsini seç</option>
-                            <option>Qadın</option>
-                            <option>Kişi</option>
-                            </select>
                         </div>
-                       
-                        <div class="form-group col-md-6">
-                           
-                            <input class="form-control" type="date" name="dateofbirth" required>
-                            </div>
-                    </div>
-        
-                    <div class="form-row">
+                    <!-- <p class="fieldset">
+                        <input type="checkbox" onclick="myFunction()"> Şifrəni göstər  
+                    </p> -->
+                <p class="fieldset">
+                    
+                    <input type="checkbox" id="remember-me" checked>
+                    <label for="remember-me">Yadda saxla</label>
+                </p>
+
+                <p class="fieldset">
+                    <input class="full-width" type="submit" value="Login">
+                </p>
+            </form>
+            
+            <p class="cd-form-bottom-message"><a href="#0">Şifrəni unutdum</a></p>
+            <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-login -->
+
+        <div id="cd-signup"> <!-- sign up form -->
+            <form class="cd-form">
+               
+                <div class="form-row">
                     <div class="form-group col-md-6">
-                        <input type="email" class="form-control" name="email" placeholder="Email " required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <div class="input-group show-hide-password">
-                            <input id="password-field" class="form-control" name="password" placeholder="Şifrəni daxil edin" type="password" required>
-                            <div class="input-group-append">
-                            <!-- <span class="input-group-text" toggle="#password-field"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span>
-                            -->
-                           
-                            </div>
-                            </div>
-                            </div>
+                       
+                        <input type="text" class="form-control" name="name" placeholder="Ad" required>
+                    <span class="cd-error-message">Yanlış!</span>
                     </div>
-        
-                      <div class="form-row">
-                          <div class="form-group col-md-4">
-                            <select name="gov_id_prefix" class="small-select" id="id_gov_id_prefix" onchange="changeValue(this)">
-                                <option value="AZE" selected="">AZE</option>
-                                <option value="AA">AA</option>
-                                </select>
-                          </div>
-        
-                          <div class="form-group col-md-8">
-                            <input type="text" name="gov_id" maxlength="8" class="form-control iden-card pl-2" required="" id="id_gov_id" im-insert="true" placeholder="Seriya nömrəsi">
-                         
-                      </div>
+                
+                    <div class="form-group col-md-6">
+                        
+                        <input type="text" class="form-control" name="name" placeholder="Soyad" required>
+                    <span class="cd-error-message">Yanlış!</span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  
+                <select class="form-control" name="gender" required>
+                    <option value="">Cinsini seç</option>
+                    <option>Qadın</option>
+                    <option>Kişi</option>
+                    </select>
+                </div>
+               
+                <div class="form-group col-md-6">
+                   
+                    <input class="form-control" type="date" name="dateofbirth" required>
                     </div>
-        
-                      <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <input type="text" maxlength="7" class="form-control iden-card pl-2" required="" id="id_gov_id" im-insert="true" placeholder="FIN">
-                         
-                          </div>
-                          <div class="form-group col-md-2">
-                            <input type="text" disabled="disabled" name="number" class="form-control pl-2" required="" im-insert="true" id="id_phone" placeholder="+994">
-                        </div>
-                        <div class=" form-group col-md-4">
-                            <input type="text" name="phone" maxlength="9" class="form-control pl-2" required="" id="id_phone" im-insert="true" placeholder="Nömrəni daxil edin">
-                                
-                        </div>
-                      </div>
-                      <div class="form-row">
-                          <div class="form-group col-md-12">
-                            <input type="text" name="phone" maxlength="7" class="form-control pl-2" required="" id="id_phone" im-insert="true" placeholder="Ünvanı daxil edin">
-                             
-                          </div>
-                      </div>
-        
-                      <p class="fieldset">
-                        <input type="checkbox" onclick="yourFunction()"> Şifrəni göstər  
-                    </p>
-        
-                        <p class="fieldset">
-                            <input type="checkbox" id="accept-terms">
-                            <label for="accept-terms"><a href="#0">Şərtlərlə </a>razıyam </label>
-                        </p>
-        
-        
-                        <p class="fieldset">
-                            <input class="full-width has-padding" type="submit" value="Hesab yarat">
-                        </p>
+            </div>
+
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Email " required>
+                </div>
+                <div class="form-group col-md-6">
+                    <div >
+                        <input id="password-field2" type="password" class="form-control" name="password" placeholder="Şifrə" >
+                        <i class="toggle-password fa fa-fw fa-eye-slash"></i>
+                    <div class="input-group-append">
+                    <!-- <span class="input-group-text" toggle="#password-field"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span>
+                    -->
+                   
                     </div>
-                    </form>
-        
-                    <!-- <a href="#0" class="cd-close-form">Close</a> -->
-                </div> <!-- cd-signup -->
-        
-                <div id="cd-reset-password"> <!-- reset password form -->
-                    <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-        
-                    <form class="cd-form">
-                        <p class="fieldset">
-                            <label class="image-replace cd-email" for="reset-email">E-mail</label>
-                            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
-        
-                        <p class="fieldset">
-                            <input class="full-width has-padding" type="submit" value="Reset password">
-                        </p>
-                    </form>
-        
-                    <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
-                </div> <!-- cd-reset-password -->
-                <a href="#0" class="cd-close-form">Close</a>
-            </div> <!-- cd-user-modal-container -->
+                    </div>
+                    </div>
+            </div>
+
+              <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <select name="gov_id_prefix" class="small-select" id="id_gov_id_prefix" onchange="changeValue(this)">
+                        <option value="AZE" selected="">AZE</option>
+                        <option value="AA">AA</option>
+                        </select>
+                  </div>
+
+                  <div class="form-group col-md-8">
+                    <input type="text" name="gov_id" maxlength="8" class="form-control iden-card pl-2" required="" id="id_gov_id" im-insert="true" placeholder="Seriya nömrəsi">
+                 
+              </div>
+            </div>
+
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" maxlength="7" class="form-control iden-card pl-2" required="" id="id_gov_id" im-insert="true" placeholder="FIN">
+                 
+                  </div>
+                  <div class="input-group mb-3  col-md-6">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">+994</span>
+                    </div>
+                    <input  class="form-control" maxlength="9" id="phone" type="tel" aria-describedby="basic-addon1">
+                    </div>
+               
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="text" name="phone" maxlength="7" class="form-control pl-2" required="" id="id_phone" im-insert="true" placeholder="Ünvanı daxil edin">
+                     
+                  </div>
+              </div>
+
+             
+
+                <p class="fieldset">
+                    <input type="checkbox" id="accept-terms">
+                    <label for="accept-terms"><a href="#0">Şərtlərlə </a>razıyam </label>
+                </p>
+
+
+                <p class="fieldset">
+                    <input class="full-width has-padding" type="submit" value="Hesab yarat">
+                </p>
+            </div>
+            </form>
+
+            <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-signup -->
+
+        <div id="cd-reset-password"> <!-- reset password form -->
+            <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+            <form class="cd-form">
+                <p class="fieldset">
+                    <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                    <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                    <span class="cd-error-message">Error message here!</span>
+                </p>
+
+                <p class="fieldset">
+                    <input class="full-width has-padding" type="submit" value="Reset password">
+                </p>
+            </form>
+
+            <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+        </div> <!-- cd-reset-password -->
+        <a href="#0" class="cd-close-form">Close</a>
+    </div> <!-- cd-user-modal-container -->
         </div> 
         
 
 
-    <section>
+    <section style="background-color:#f8f9f3">
         <div class="container">
         <div class="row">
         <div class="col-lg-6">
@@ -338,87 +336,82 @@
         </div>
         </section> 
     
-    
-    
- 
-
+  
+<!--Start Footer-->
 <footer id="footer">
-<div class="footer-content">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="widget">
-<div class="widget-title">Flyex.az</div>
-<p class="mb-5">Built in , Baku, Azerbaijan<br> All rights reserved. Copyright © 2019. INSPIRO.</p>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="row">
-<div class="col-lg-3">
-<div class="widget">
-<div class="widget-title">Discover</div>
-<ul class="list">
-<li><a href="privacy.html">Gizlilik şərtləri</a></li>
-<li><a href="#">Haqqımızda</a></li>
-
-</ul>
-</div>
-</div>
-<div class="col-lg-3">
-<div class="widget">
-<div class="widget-title">Əlavə</div>
-<ul class="list">
-<li><a href="#">Haqqımızda</a></li>
-<li><a href="#">Gizlilik şərtləri</a></li>
-
-</ul>
-</div>
-</div>
-<div class="col-lg-3">
-<div class="widget">
-<div class="widget-title">Pages</div>
-<ul class="list">
-<li><a href="#">Haqqımızda</a></li>
-<li><a href="#">Kontakt</a></li>
-
-</ul>
-</div>
-</div>
-<div class="col-lg-3">
-<div class="widget">
-<div class="widget-title">Support</div>
-<ul class="list">
-<li><a href="#">Help Desk</a></li>
-<li><a href="#">Documentation</a></li>
-<li><a href="#">Contact Us</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="copyright-content">
-<div class="container">
-<div class="copyright-text text-center">&copy; 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="http://www.inspiro-media.com/" target="_blank" rel="noopener"> INSPIRO</a> </div>
-</div>
-</div>
-</footer>
-
-</div>
-
-
-<a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
-
-
-
-<script src="js/jquery.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/modal.js"></script>
-<script src="js/functions.js"></script>
-
-</body>
-
-<!-- Mirrored from inspirothemes.com/polo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 18:57:38 GMT -->
-</html>
+    <div class="footer-content">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-6">
+    <div class="widget">
+    <div class="widget-title">Flyex.az</div>
+    <p class="mb-5">Built in , Baku, Azerbaijan<br> All rights reserved. Copyright © 2019. INSPIRO.</p>
+    </div>
+    </div>
+    <div class="col-lg-6">
+    <div class="row">
+    <div class="col-lg-3">
+    <div class="widget">
+    <div class="widget-title">Discover</div>
+    <ul class="list">
+    <li><a href="privacy.html">Gizlilik şərtləri</a></li>
+    <li><a href="#">Haqqımızda</a></li>
+    
+    </ul>
+    </div>
+    </div>
+    <div class="col-lg-3">
+    <div class="widget">
+    <div class="widget-title">Əlavə</div>
+    <ul class="list">
+    <li><a href="#">Haqqımızda</a></li>
+    <li><a href="#">Gizlilik şərtləri</a></li>
+    
+    </ul>
+    </div>
+    </div>
+    <div class="col-lg-3">
+    <div class="widget">
+    <div class="widget-title">Pages</div>
+    <ul class="list">
+    <li><a href="#">Haqqımızda</a></li>
+    <li><a href="#">Kontakt</a></li>
+    
+    </ul>
+    </div>
+    </div>
+    <div class="col-lg-3">
+    <div class="widget">
+    <div class="widget-title">Support</div>
+    <ul class="list">
+    <li><a href="#">Help Desk</a></li>
+    <li><a href="#">Documentation</a></li>
+    <li><a href="#">Contact Us</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    </footer>
+    <!--End  Footer-->
+    
+    
+    
+    
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/functions.js"></script>
+    
+    </body>
+    
+    <!-- Mirrored from inspirothemes.com/polo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 18:57:38 GMT -->
+    </html>

@@ -5,6 +5,10 @@ html {
 body .body-inner {
     padding: 0;
     margin: 0;
+    
+}
+body{
+    background-color:#f8f9f3;
 }
 body .container-wide {
     width: 100%;
@@ -896,7 +900,15 @@ section.dark {
     list-style: outside none none;
     margin: 0;
     padding: 0;
-    float: left;
+    float: right;
+}
+@media(max-width:580px){
+    #topbar .top-menu {
+        list-style: outside none none;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
 }
 #topbar .top-menu > li {
     display: inline-block;
@@ -906,16 +918,16 @@ section.dark {
 #topbar .top-menu > li > a {
     color: #484848;
     display: block;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     height: 40px;
-    margin-right: 16px;
+    margin-top:6px;
 }
 #topbar .top-links {
     position: relative;
 }
 #topbar .social-icons {
-    float: right;
+    float: left;
     height: 100%;
     overflow: hidden;
 }
@@ -6411,6 +6423,7 @@ h6.font-parisienne {
 }
 #footer .widget-categories a {
     color: #888;
+
 }
 .shop-promo-box {
     min-height: 360px;
@@ -6457,23 +6470,25 @@ h6.font-parisienne {
 #footer {
     display: block;
     position: relative;
-    background-color: #f8f9fa;
+    background-color: #141414;
     font-size: 14px;
     line-height: 32px;
     font-weight: 400;
     font-family: Averta;
 }
-#footer a:not(.btn):not(:hover) {
+/* #footer a:not(.btn):not(:hover) {
     color: #484848;
-}
+} */
 #footer p {
     font-family: Averta;
+    color: #f6f6f6;
 }
 #footer a:not(.btn) {
     font-weight: 400;
 }
 #footer .footer-content {
     padding: 60px 0 40px 0;
+    color:#f6f6f6;
 }
 #footer .widget .widget-title,
 #footer .widget h4 {
@@ -6486,18 +6501,21 @@ h6.font-parisienne {
     font-family: Averta;
     font-size: 15px;
     line-height: 32px;
-    color: #999;
+    color: #f6f6f6;
 }
 #footer .copyright-content {
     min-height: 80px;
     padding: 30px 0;
-    background-color: #eff1f4;
+    background-color: #f6f6f6;
     font-size: 13px;
 }
 #footer .logo {
     margin-bottom: 54px;
     margin-top: 12px;
     max-width: 80px;
+}
+#footer ul li a{
+    color: #f6f6f6;
 }
 #footer .footer-logo {
     border-right: 1px solid #333;
@@ -6513,7 +6531,7 @@ h6.font-parisienne {
 #footer.dark p,
 #footer.inverted p,
 .dark #footer p {
-    color: #999;
+    color: #f6f6f6;
 }
 #footer.dark a:not(.btn),
 #footer.inverted a:not(.btn),
@@ -10244,7 +10262,7 @@ button.btn {
     letter-spacing: 0.5px;
     text-decoration: none;
     outline: 0;
-    padding: 5px 5px;
+ 
     position: relative;
     text-transform: uppercase;
     background-color: #2250fc;

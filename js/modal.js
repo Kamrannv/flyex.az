@@ -169,23 +169,52 @@ function changeValue(dropdown) {
 
 
 
+//Show hide password//	
 
-function myFunction() {
-	var x = document.getElementById("myInput");
-	if (x.type === "password") {
-	  x.type = "text";
-	} else {
-	  x.type = "password";
-	}
-  }
+$(".toggle-password").click(function() {
+    $(this).toggleClass("fa-eye fa-eye-slash");
+    input = $(this).parent().find("input");
+    if (input.attr("type") == "password") {
+        input.attr("type", "text");
+    } else {
+        input.attr("type", "password");
+    }
+});
 
+
+//Add new field//
+$('.multi-field-wrapper').each(function() {
+    var $wrapper = $('.multi-fields', this);
+    $(".add-field", $(this)).click(function(e) {
+        $('.multi-field:first-child', $wrapper).clone(true).appendTo($wrapper).find('input').val('').focus();
+    });
+    $('.multi-field .remove-field', $wrapper).click(function() {
+        if ($('.multi-field', $wrapper).length > 1)
+            $(this).parent('.multi-field').remove();
+    });
+});
+
+
+// Selectall
+$(document).ready(function () {
+    $('#selectall').click(function () {
+        $('.selectedId').prop('checked', this.checked);
+    });
+
+    $('.selectedId').change(function () {
+        var check = ($('.selectedId').filter(":checked").length == $('.selectedId').length);
+        $('#selectall').prop("checked", check);
+    });
+});
+
+//deleterow
+
+function deleteRow(el) {
+    if(!confirm("Silmək istədiyizdən əminsiniz?")) return;
+    
+    var tbl = el.parentNode.parentNode.parentNode;
+    var row = el.parentNode.parentNode.rowIndex;
+
+    tbl.deleteRow(row);
   
-
-function yourFunction() {
-	var x = document.getElementById("password-field");
-	if (x.type === "password") {
-	  x.type = "text";
-	} else {
-	  x.type = "password";
-	}
-  }
+}

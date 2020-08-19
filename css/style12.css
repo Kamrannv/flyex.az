@@ -367,3 +367,10 @@ th{
     margin: 0;
 
 }
+
+.center-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}

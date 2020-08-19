@@ -21,98 +21,97 @@
 <link href="css/imagehover.min.css" rel="stylesheet">
 </head>
 <body>
-
+<!--Header start-->
 <div class="body-inner">
-
-<header id="header" class="header-always-fixed header-sticky sticky-active">
-<div class="header-inner">
-<div class="container">
-
-<div id="logo">
-<a href="index.html">
     
-<span class="logo-default"> <img src="_images/logom.jpeg" width="110px" height="60px" style="margin-bottom: 15px;"/></span>
-<span class="logo-dark"><img src="_images/logob.jpeg" width="250px" height="150px"/></span>
-</a>
-</div>
+<div id="topbar" class="dark topbar-fullwidth">
+    <div class="container">
+    <div class="row">
+
+        <div class="col-md-6 d-none d-sm-block">
+            <div class="social-icons social-icons-colored-hover">
+            <ul>
+            <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-google"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="col-md-6">
+    <ul class="top-menu main-nav">
+    <li><a class="cd-signin" href="#0">Daxil ol</a></li>
+    <li><a class="cd-signup" href="#0">Qeydiyyat</a></li>
+   
+    </ul>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <header id="header" class="white" data-fullwidth="true">
+        <div class="header-inner">
+        <div class="container">
+        
+        <div id="logo">
+        <a href="index.html">
+        <span class="logo-default">Flyex.az</span>
+        <span class="logo-dark">Flyex.az</span>
+        </a>
+        </div>
+        
+        
+        <div id="search"><a id="btn-search-close" class="btn-search-close" aria-label="Close search form"><i class="icon-x"></i></a>
+        <form class="search-form" action="https://inspirothemes.com/polo/search-results-page.html" method="get">
+        <input class="form-control" name="q" type="text" placeholder="Type & Search..." />
+        <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
+        </form>
+        </div>
+        
+        <div id="mainMenu-trigger">
+        <a class="lines-button x"><span class="lines"></span></a>
+        </div>
+        
+        
+        <div id="mainMenu">
+            <div class="container">
+            <nav>
+            
+            <ul>
+                <li class=""><a href="index.html">Ana səhifə</a></li>
+            <li><a href="about.html">Haqqımızda</a></li>
+            
+            
+             
+            <li ><a href="shops.html">Mağazalar</a></li>
+            
+            <li><a href="contact.html">Əlaqə</a></li>
+            
+            <li>
+                <a href="#0"class="cd-signin"> 
+                
+                <button type="button" class="btn btn-primary" style="background-color: #f3944a;
+                border-color: #f3944a;"> Sifariş et</button>
+                </a>
+                </li>
+            
+            </ul>
+            
+            </nav>
+            
+            
+            
+            </div>
+            </div>
+        
+        </div>
+        </div>
+        </header>
 
 
 
-
-<div class="header-extras" >
-<ul style="display: flex; margin-top:16%;">
-
-
-
-<li class="main-nav" >
-    <a class="cd-signin" href="#0">
-        <button type="button" class="btn btn-primary" style="background-color: #f3944a;
-border-color: #f3944a;">Daxil ol</button>
-</a>
-</li>
-<li class="main-nav">
-    <a class="cd-signup" href="#0">
-        <button type="button" class="btn btn-primary" style="background-color: #f3944a;
-        border-color: #f3944a;"> Qeydiyyat</button></a>
-</li> 
-
-<!-- <li>
-    <a href="#"> 
-    
-    <button type="button" class="btn btn-primary" style="background-color: #f3944a;
-    border-color: #f3944a;"> Sifariş et</button>
-    </a>
-    
-    </li> -->
-
-</ul>
-</div>
-
-
-
-
-
-<div id="mainMenu-trigger">
-<a class="lines-button x"><span class="lines"></span></a>
-</div>
-
-
-<div id="mainMenu">
-<div class="container">
-<nav>
-
-<ul>
-    <li class=""><a href="index.html">Ana səhifə</a></li>
-<li><a href="about.html">Haqqımızda</a></li>
-
-
- 
-<li class="dropdown"><a href="shops.html">Mağazalar</a></li>
-
-<li class="dropdown"><a href="contact.html">Əlaqə</a></li>
-
-
-
-</ul>
-
-</nav>
-
-
-
-</div>
-</div>
-
-
-
-
-</div>
-</div>
-
-
-</header>
-
-
-
+<!--Start Modal for signin-->
 <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
     <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
         <ul class="cd-switcher">
@@ -127,9 +126,9 @@ border-color: #f3944a;">Daxil ol</button>
                     <span class="cd-error-message">Yanlış!</span>
                     </div>
                     <div class="form-group col-md-12">
-                        <div class="input-group show-hide-password">
-                        <input class="form-control" id="myInput" name="password" placeholder="Şifrəni daxil edin" type="password" required>
-                        
+                        <div >
+                            <input id="password-field" type="password" class="form-control" name="password" placeholder="Şifrə">
+                            <i class="toggle-password fa fa-fw fa-eye-slash"></i>
                         <div class="input-group-append">
                            <!-- <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span> -->
                         <span class="cd-error-message">Yanlış!</span>
@@ -137,9 +136,9 @@ border-color: #f3944a;">Daxil ol</button>
                         
                         </div>
                         </div>
-                    <p class="fieldset">
+                    <!-- <p class="fieldset">
                         <input type="checkbox" onclick="myFunction()"> Şifrəni göstər  
-                    </p>
+                    </p> -->
                 <p class="fieldset">
                     
                     <input type="checkbox" id="remember-me" checked>
@@ -192,8 +191,9 @@ border-color: #f3944a;">Daxil ol</button>
                 <input type="email" class="form-control" name="email" placeholder="Email " required>
                 </div>
                 <div class="form-group col-md-6">
-                    <div class="input-group show-hide-password">
-                    <input id="password-field" class="form-control" name="password" placeholder="Şifrəni daxil edin" type="password" required>
+                    <div >
+                        <input id="password-field2" type="password" class="form-control" name="password" placeholder="Şifrə" >
+                        <i class="toggle-password fa fa-fw fa-eye-slash"></i>
                     <div class="input-group-append">
                     <!-- <span class="input-group-text" toggle="#password-field"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span>
                     -->
@@ -222,13 +222,13 @@ border-color: #f3944a;">Daxil ol</button>
                     <input type="text" maxlength="7" class="form-control iden-card pl-2" required="" id="id_gov_id" im-insert="true" placeholder="FIN">
                  
                   </div>
-                  <div class="form-group col-md-2">
-                    <input type="text" disabled="disabled" name="number" class="form-control pl-2" required="" im-insert="true" id="id_phone" placeholder="+994">
-                </div>
-                <div class=" form-group col-md-4">
-                    <input type="text" name="phone" maxlength="9" class="form-control pl-2" required="" id="id_phone" im-insert="true" placeholder="Nömrəni daxil edin">
-                        
-                </div>
+                  <div class="input-group mb-3  col-md-6">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">+994</span>
+                    </div>
+                    <input  class="form-control" maxlength="9" id="phone" type="tel" aria-describedby="basic-addon1">
+                    </div>
+               
               </div>
               <div class="form-row">
                   <div class="form-group col-md-12">
@@ -237,9 +237,7 @@ border-color: #f3944a;">Daxil ol</button>
                   </div>
               </div>
 
-              <p class="fieldset">
-                <input type="checkbox" onclick="yourFunction()"> Şifrəni göstər  
-            </p>
+             
 
                 <p class="fieldset">
                     <input type="checkbox" id="accept-terms">
@@ -274,19 +272,14 @@ border-color: #f3944a;">Daxil ol</button>
             <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
         </div> <!-- cd-reset-password -->
         <a href="#0" class="cd-close-form">Close</a>
-    </div> <!-- cd-user-modal-container -->
+    </div> 
+    <!--End Modal for signin-->
 </div> 
+<!--End header-->
 
 
 
-
-
-
-
-
-
-
-
+<!--Start Slider-->
 <section class="slideme background-grey" >
     <div class="container">
        
@@ -415,9 +408,9 @@ border-color: #f3944a;">Daxil ol</button>
     </div>
        
 </section>
+<!--End Slider-->
 
-
-
+<!--Start How it works-->
 <section class="principle">
     <div class="container">
       
@@ -456,6 +449,9 @@ border-color: #f3944a;">Daxil ol</button>
       
     </div>
 </section>
+<!--End How it works-->
+
+<!--Start Ustunluklerimiz-->
 <section id="page-content">
     <div class="container">
     <div class="row">
@@ -541,8 +537,10 @@ border-color: #f3944a;">Daxil ol</button>
     </div>
     </div>
     </section>
+<!--End Ustunluklerimiz-->
 
-        <section id="page-content">
+<!--Start Tariflerimiz-->
+ <section id="page-content">
             <div class="container">
             <div class="row">
             <div class="content col-lg-12">
@@ -589,9 +587,10 @@ border-color: #f3944a;">Daxil ol</button>
             </div>
             </div>
         </section>
+<!--End Tariflerimiz-->
 
-
-        <section id="page-content">
+<!--Start Kalkulator-->
+ <section id="page-content">
             <div class="container">
             <div class="row">
             <div class="content col-lg-12">
@@ -625,7 +624,7 @@ border-color: #f3944a;">Daxil ol</button>
 </div>
 </div>
 
-<div class="col-lg-4 col-md-12">
+<div class="col-lg-3 col-md-12">
     <div class="input-group">
         <label style="width: 100%;">
             <select class="form-control" name="gender" required>
@@ -640,7 +639,7 @@ border-color: #f3944a;">Daxil ol</button>
 
 
 
-        <div class=" col-lg-4 col-md-12">
+        <div class=" col-lg-3 col-md-12">
 
             <div class="input-group">
                 <label>
@@ -657,7 +656,7 @@ border-color: #f3944a;">Daxil ol</button>
         </div>
         </div>
           
-        <div class="col-lg-4 col-md-12">
+        <div class="col-lg-2 col-md-12">
 
             <div class="input-group">
                 <label>
@@ -692,7 +691,9 @@ border-color: #f3944a;">Daxil ol</button>
             </div>
             </div>
         </section>
+<!--End Kalkulator-->
 
+<!--Start Yenilikler-->
 <section class="content background-grey">
 <div class="container">
 <div class="heading-text heading-section ">
@@ -716,7 +717,7 @@ Comments</a></span>
 <h2><a href="blog.html">Standard post with a single image
 </a></h2>
 <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
-<a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+<a href="blog.html" class="item-link">Read More <i class="icon-chevron-right"></i></a>
 </div>
 </div>
 </div>
@@ -766,58 +767,77 @@ Comments</a></span>
 </div>
 </div>
 </section>
+<!--End Yenilikler-->
 
-
-<section class="p-t-60">
-<div class="container">
-<div class="heading-text heading-section text-center">
-    <h2 style="text-align: center;">Mağazalar</h2>
-<span class="lead">Our awesome clients we've had the pleasure to work with! </span>
- </div>
+<!--Start Magazalar-->
+<section class="content background-grey">
+    <div class="container">
+    <div class="heading-text heading-section ">
+        <h2 style="text-align: center;">Mağazalar</h2>
+     
+    
+    </div>
 <div class="carousel client-logos" data-items="6" data-items-sm="4" data-items-xs="3" data-items-xxs="2" data-margin="20" data-arrows="false" data-autoplay="true" data-autoplay="3000" data-loop="true">
 <div>
-<a href="#"><img alt="" src="images/clients/1.png"> </a>
+    <a class="shop-icon" href="https://www.pierrecardin.com.tr/" target="_blank" rel="”nofollow”">
+        <img src="https://kargofly.az/storage/shops/23.png">
+    </a>
 </div>
 <div>
-<a href="#"><img alt="" src="images/clients/2.png"> </a>
+    <a class="shop-icon" href="https://www.mavi.com/kadin/c/1" target="_blank" rel="”nofollow”">
+        <img src="https://kargofly.az/storage/shops/25.png">
+    </a>
 </div>
 <div>
-<a href="#"><img alt="" src="images/clients/3.png"> </a>
+    <a class="shop-icon" href="https://tr.uspoloassn.com/" target="_blank" rel="”nofollow”">
+        <img src="https://kargofly.az/storage/shops/26.png">
+    </a>
 </div>
 <div>
-<a href="#"><img alt="" src="images/clients/4.png"> </a>
+    <a class="shop-icon" href="https://www.koton.com/tr/" target="_blank" rel="”nofollow”">
+        <img src="https://kargofly.az/storage/shops/27.png">
+    </a>
 </div>
 <div>
-<a href="#"><img alt="" src="images/clients/5.png"> </a>
+    <a class="shop-icon" href="https://www.bershka.com/tr/" target="_blank" rel="”nofollow”">
+        <img src="https://kargofly.az/storage/shops/29.png">
+    </a>
 </div>
 <div>
-<a href="#"><img alt="" src="images/clients/6.png"> </a>
+    <a class="shop-icon" href="https://www.maccosmetics.com.tr/" target="_blank" rel="”nofollow”">
+        <img src="https://kargofly.az/storage/shops/32.png">
+    </a>
 </div>
 <div>
-<a href="#"><img alt="" src="images/clients/7.png"> </a>
+    <a class="shop-icon" href="https://www.lacoste.com.tr/" target="_blank" rel="”nofollow”">
+        <img src="https://kargofly.az/storage/shops/33.png">
+    </a>
 </div>
 <div>
-<a href="#"><img alt="" src="images/clients/8.png"> </a>
+    <a class="shop-icon" href="https://www.lcwaikiki.com/tr-TR/TR" target="_blank" rel="”nofollow”">
+        <img src="https://kargofly.az/storage/shops/34.png">
+    </a>
+          
 </div>
-<div>
-<a href="#"><img alt="" src="images/clients/9.png"> </a>
+
 </div>
 </div>
-</div>
+<div style="text-align: center;">
+    <a class="show-more d-none d-sm-block" href="shops.html">
+        <img src="arrow-down.svg" alt="Daha cox" width="75px" height="28px">
+    </a>
+  </div>
 </section>
+<!--End Magazalar-->
 
 
-
-<section>
-                            <div class="accordion-wrapper section-space--ptb_100">
-                                <div class="container">
-                                <div class="row">
-                                <div class="col-lg-12">
-                                
-                                    <div class="heading-text heading-section ">
-                                        <h2 style="text-align: center;">Sual-cavab</h2>
-                                    
-                                    </div>
+<!--Start FAQ-->
+<section class="content background-grey">
+    <div class="container">
+    <div class="heading-text heading-section ">
+        <h2 style="text-align: center;">Sual-cavab</h2>
+ 
+    </div>
                                 
                                 </div>
                                 </div>
@@ -908,14 +928,11 @@ Comments</a></span>
                                 </div>
     
 </section>
-
-
-
-
+<!--End FAQ-->
 
 
  
-
+<!--Start Footer-->
 <footer id="footer">
 <div class="footer-content">
 <div class="container">
@@ -973,53 +990,16 @@ Comments</a></span>
 </div>
 </div>
 </div>
-<div class="copyright-content">
-<div class="container">
-<div class="copyright-text text-center">&copy; 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="http://www.inspiro-media.com/" target="_blank" rel="noopener"> INSPIRO</a> </div>
-</div>
-</div>
-</footer>
 
-</div>
+</footer>
+<!--End  Footer-->
+
+
 
 
 <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
 
-<!-- <script>
-    // Plugin options and our code
-$("#modal_trigger").leanModal({
-    top: 100,
-    overlay: 0.6,
-    closeButton: ".modal_close"
-});
 
-$(function() {
-    // Calling Login Form
-    $("#login_form").click(function() {
-            $(".social_login").hide();
-            $(".user_login").show();
-            return false;
-    });
-
-    // Calling Register Form
-    $("#register_form").click(function() {
-            $(".social_login").hide();
-            $(".user_register").show();
-            $(".header_title").text('Register');
-            return false;
-    });
-
-    // Going back to Social Forms
-    $(".back_btn").click(function() {
-            $(".user_login").hide();
-            $(".user_register").hide();
-            $(".social_login").show();
-            $(".header_title").text('Login');
-            return false;
-    });
-});
-
-</script> -->
 
 <script src="js/jquery.js"></script>
 <script src="js/plugins.js"></script>

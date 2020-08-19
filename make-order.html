@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="author" content="INSPIRO" />
-<meta name="description" content="Flyex">
+<meta name="description" content="Themeforest Template Polo, html template">
 <link rel="icon" type="image/png" href="images/favicon.png">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -15,72 +15,265 @@
 <link href="css/plugins.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/style12.css" rel="stylesheet">
+<link href="modal.css" rel="stylesheet">
+
 
 <link href="css/imagehover.min.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="body-inner">
-
-<header id="header" class="header-always-fixed header-sticky sticky-active">
-<div class="header-inner">
-<div class="container">
-
-<div id="logo">
-<a href="index.html">
     
-<span class="logo-default"> <img src="_images/logom.jpeg" width="170px" height="70px" style="margin-bottom: 15px;"/></span>
-<span class="logo-dark"><img src="_images/logob.jpeg" width="250px" height="150px"/></span>
-</a>
-</div>
+<div id="topbar" class="dark topbar-fullwidth">
+    <div class="container">
+    <div class="row">
+
+        <div class="col-md-6 d-none d-sm-block">
+            <div class="social-icons social-icons-colored-hover">
+            <ul>
+            <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-google"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+            </div>
+            </div>
+
+    <div class="col-md-6">
+    <ul class="top-menu main-nav">
+    <li><a class="cd-signin" href="#0">Daxil ol</a></li>
+    <li><a class="cd-signup" href="#0">Qeydiyyat</a></li>
+   
+    </ul>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <header id="header" class="white" data-fullwidth="true">
+        <div class="header-inner">
+        <div class="container">
+        
+        <div id="logo">
+        <a href="index.html">
+        <span class="logo-default">Flyex.az</span>
+        <span class="logo-dark">Flyex.az</span>
+        </a>
+        </div>
+        
+        
+        <div id="search"><a id="btn-search-close" class="btn-search-close" aria-label="Close search form"><i class="icon-x"></i></a>
+        <form class="search-form" action="https://inspirothemes.com/polo/search-results-page.html" method="get">
+        <input class="form-control" name="q" type="text" placeholder="Type & Search..." />
+        <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
+        </form>
+        </div>
+        
+        <div id="mainMenu-trigger">
+        <a class="lines-button x"><span class="lines"></span></a>
+        </div>
+        
+        
+        <div id="mainMenu">
+            <div class="container">
+            <nav>
+            
+            <ul>
+                <li class=""><a href="index.html">Ana səhifə</a></li>
+            <li><a href="about.html">Haqqımızda</a></li>
+            
+            
+             
+            <li ><a href="shops.html">Mağazalar</a></li>
+            
+            <li><a href="contact.html">Əlaqə</a></li>
+            
+            <!-- <li>
+                <a href="#"> 
+                
+                <button type="button" class="btn btn-primary" style="background-color: #f3944a;
+                border-color: #f3944a;"> Sifariş et</button>
+                </a>
+                </li> -->
+            
+            </ul>
+            
+            </nav>
+            
+            
+            
+            </div>
+            </div>
+        
+        </div>
+        </div>
+        </header>
+        
+        
+        
+        
+<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+    <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+        <ul class="cd-switcher">
+            <li><a href="#0">Daxil ol</a></li>
+            <li><a href="#0">Qeydiyyat</a></li>
+        </ul>
+
+        <div id="cd-login"> <!-- log in form -->
+            <form class="cd-form">
+                <div class="form-group col-md-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email " required>
+                    <span class="cd-error-message">Yanlış!</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div >
+                            <input id="password-field" type="password" class="form-control" name="password" placeholder="Şifrə">
+                            <i class="toggle-password fa fa-fw fa-eye-slash"></i>
+                        <div class="input-group-append">
+                           <!-- <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span> -->
+                        <span class="cd-error-message">Yanlış!</span>
+                        </div>
+                        
+                        </div>
+                        </div>
+                    <!-- <p class="fieldset">
+                        <input type="checkbox" onclick="myFunction()"> Şifrəni göstər  
+                    </p> -->
+                <p class="fieldset">
+                    
+                    <input type="checkbox" id="remember-me" checked>
+                    <label for="remember-me">Yadda saxla</label>
+                </p>
+
+                <p class="fieldset">
+                    <input class="full-width" type="submit" value="Login">
+                </p>
+            </form>
+            
+            <p class="cd-form-bottom-message"><a href="#0">Şifrəni unutdum</a></p>
+            <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-login -->
+
+        <div id="cd-signup"> <!-- sign up form -->
+            <form class="cd-form">
+               
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                       
+                        <input type="text" class="form-control" name="name" placeholder="Ad" required>
+                    <span class="cd-error-message">Yanlış!</span>
+                    </div>
+                
+                    <div class="form-group col-md-6">
+                        
+                        <input type="text" class="form-control" name="name" placeholder="Soyad" required>
+                    <span class="cd-error-message">Yanlış!</span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  
+                <select class="form-control" name="gender" required>
+                    <option value="">Cinsini seç</option>
+                    <option>Qadın</option>
+                    <option>Kişi</option>
+                    </select>
+                </div>
+               
+                <div class="form-group col-md-6">
+                   
+                    <input class="form-control" type="date" name="dateofbirth" required>
+                    </div>
+            </div>
+
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Email " required>
+                </div>
+                <div class="form-group col-md-6">
+                    <div >
+                        <input id="password-field2" type="password" class="form-control" name="password" placeholder="Şifrə" >
+                        <i class="toggle-password fa fa-fw fa-eye-slash"></i>
+                    <div class="input-group-append">
+                    <!-- <span class="input-group-text" toggle="#password-field"><i class="icon-eye-off" aria-hidden="true" style="cursor: pointer;"></i></span>
+                    -->
+                   
+                    </div>
+                    </div>
+                    </div>
+            </div>
+
+              <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <select name="gov_id_prefix" class="small-select" id="id_gov_id_prefix" onchange="changeValue(this)">
+                        <option value="AZE" selected="">AZE</option>
+                        <option value="AA">AA</option>
+                        </select>
+                  </div>
+
+                  <div class="form-group col-md-8">
+                    <input type="text" name="gov_id" maxlength="8" class="form-control iden-card pl-2" required="" id="id_gov_id" im-insert="true" placeholder="Seriya nömrəsi">
+                 
+              </div>
+            </div>
+
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" maxlength="7" class="form-control iden-card pl-2" required="" id="id_gov_id" im-insert="true" placeholder="FIN">
+                 
+                  </div>
+                  <div class="input-group mb-3  col-md-6">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">+994</span>
+                    </div>
+                    <input  class="form-control" maxlength="9" id="phone" type="tel" aria-describedby="basic-addon1">
+                    </div>
+               
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="text" name="phone" maxlength="7" class="form-control pl-2" required="" id="id_phone" im-insert="true" placeholder="Ünvanı daxil edin">
+                     
+                  </div>
+              </div>
+
+             
+
+                <p class="fieldset">
+                    <input type="checkbox" id="accept-terms">
+                    <label for="accept-terms"><a href="#0">Şərtlərlə </a>razıyam </label>
+                </p>
 
 
+                <p class="fieldset">
+                    <input class="full-width has-padding" type="submit" value="Hesab yarat">
+                </p>
+            </div>
+            </form>
 
+            <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-signup -->
 
-<div class="header-extras">
-<ul>
-<li>
-<a href="#"> 
+        <div id="cd-reset-password"> <!-- reset password form -->
+            <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
 
-<button type="button" class="btn btn-primary" style="background-color: #f3944a;
-border-color: #f3944a;"> Sifariş et</button>
-</a>
-</li>
+            <form class="cd-form">
+                <p class="fieldset">
+                    <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                    <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                    <span class="cd-error-message">Error message here!</span>
+                </p>
 
-</ul>
-</div>
+                <p class="fieldset">
+                    <input class="full-width has-padding" type="submit" value="Reset password">
+                </p>
+            </form>
 
-
-<div id="mainMenu-trigger">
-<a class="lines-button x"><span class="lines"></span></a>
-</div>
-
-
-<div id="mainMenu">
-<div class="container">
-<nav>
-
-<ul>
-    <li class=""><a href="index.html">Ana səhifə</a></li>
-<li><a href="about.html">Haqqımızda</a></li>
-
-
- 
-<li class="dropdown"><a href="#">Mağazalar</a></li>
-
-<li class="dropdown"><a href="#">Əlaqə</a></li>
-
-<li class="dropdown "><a  href="#">Daxil ol</a></li>
-<li class="dropdown" ><a  href="#">Qeydiyyat</a></li>
-
-</ul>
-</nav>
-</div>
-</div>
-
-</div>
-</div>
-</header>
+            <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+        </div> <!-- cd-reset-password -->
+        <a href="#0" class="cd-close-form">Close</a>
+    </div> <!-- cd-user-modal-container -->
+        </div> 
 
 
 
@@ -90,52 +283,40 @@ border-color: #f3944a;"> Sifariş et</button>
 
 
   <div class="container">
-    <div class="card" style="background-color: #e8e8e8;>
+    <div class="card" >
         <div class="card-body">
-        <h1 style="padding:15px">SİFARİŞ ET</h1>
-       
-       
+        <h4 >SİFARİŞ ET</h4>
             <div class="multi-field-wrapper">
                 <div class="multi-fields">
                   <div class="multi-field">
-                      
-                    <div class="row" style="padding:10px">
-                           
+                    <div class="row" style="padding:10px">                           
                     <div class="col-12 col-md-4 col-lg-4">
                         <label>Link</label>
                         <div class="input-group ">
                         <input type="text" required="" class="form-control link" name="link_0">
                         </div>
                         </div>
-
-
                         <div class="col-12 col-md-2 col-lg-4">
                             <label>Məhsulun sayı</label>
                             <div class="input-group ">
                             <input type="number" value="1" step="1" min="1" max="99" onblur="if (!window.__cfRLUnblockHandlers) return false; $('.price').blur()" required="" class="form-control countofproduct" name="countofproduct_0">
                             </div>
                             </div>
-
-
                         <div class="col-12 col-md-2 col-lg-4">
-                                <label>Qiymət</label>
+                                <label>Qiymət(TRY)</label>
                                 <div class="input-group ">
                                 <input type="number" step="0.01" class="form-control price" onblur="if (!window.__cfRLUnblockHandlers) return false; calculatePrice($(this))" name="price_0" required="">
-                                <span class="currency">TRY</span>
+                                
                                  </div>
-                                </div>
-
-                   
-                       
+                                </div>                       
                                 <div class="col-12 col-md-2 col-lg-4">
                                     <label>Ölçü</label>
                                     <div class="input-group">
                                     <input placeholder="Ölçüsü" name="note_size_0" class="notes form-control" required="">
                                     </div>
-                                    </div>
-                   
-                    
-                         <div class="col-12 col-md-3 col-lg-4">
+                                    </div>  
+
+                                 <div class="col-12 col-md-3 col-lg-4">
                                     <label>Kateqoriya</label>
                                     <select name="slfatura_0" class="form-control slfature js-example-basic-single select2-hidden-accessible" required="" tabindex="-1" aria-hidden="true" data-select2-id="642">
                                     <option value="">Kateqoriya seçin</option>
@@ -144,1563 +325,61 @@ border-color: #f3944a;"> Sifariş et</button>
                                     <option value="Kosmetika &amp; Təmizlik">Kosmetika &amp; Təmizlik</option>
                                     <option value="Uşaq">Uşaq</option>
                                     </select>
-                                      </div>
-
-                     
+                                      </div>                     
 
                         <div class="col-12 col-md-7 col-lg-4">
                                         <label>Əlavə qeyd</label>
                                         <div class="input-group">
                                         <textarea placeholder="Əlavə qeyd" name="notes_0" class="notes form-control"></textarea>
                                         </div>
-                                        </div>
-               
-     
-              <button type="button" class="add-field">Yeni link</button>
-            </div>
-              <button type="button" class="remove-field">Sil</button>
-
-            
-            
-
-            
+                                        </div>    
+                                       
+                                       
+                <div class="col-md-12" style="display: flex; justify-content: space-between; margin-top: 10px;">
+                    <div class="">
+                        <div class="checkbox">
+                        <input type="checkbox" id="try_quide" class="css-checkbox">
+                        <label for="try_quide" class="css-label">Türkiyə daxili kuryer xərci ilə razıyam</label>
+                        </div>
+                        <div class="checkbox">
+                        <input type="checkbox" id="qayda" class="css-checkbox">
+                        <label for="qayda" class="css-label">Qaydalarla <span id="qaydaText" style="text-decoration: underline;cursor: pointer;color: #6e6e6e;">Razıyam</span></label>
+                         </div>
+                        </div>
         
+                       <div class=""><a href="#"> 
+        
+                        <button type="button" class="btn btn-primary" style="background-color: gray;
+                        border-color: gray;"> Sifariş et</button>
+                        </a></div>
+                </div>                                    
+           
 
-            
-                  </div>
-             </div>
+                
+                    
 
-
-             <div class="col-md-12">
-                <div class="checkbox">
-                <input type="checkbox" id="try_quide" class="css-checkbox">
-                <label for="try_quide" class="css-label">Türkiyə daxili kuryer xərci ilə razıyam</label>
-                </div>
-                <div class="checkbox">
-                <input type="checkbox" id="qayda" class="css-checkbox">
-                <label for="qayda" class="css-label">Qaydalarla <span id="qaydaText" style="text-decoration: underline;cursor: pointer;color: #6e6e6e;">Razıyam</span></label>
-                 </div>
                 </div>
 
-                <a href="#"> 
+                
+                    <button  type="button" class="btn btn-primary remove remove-field"  style="background-color: #f3944a;border:#f3944a; ">Sil</button> 
+                
+                
 
-                    <button type="button" class="btn btn-primary" style="background-color: gray;
-                    border-color: gray;"> Sifariş et</button>
-                    </a>
-
-        </div>
+              </div>
+               
+            </div>
+           
+            <button  type="button" class="btn btn-primary link add-field" style="background-color: #f3944a;border:#f3944a; ">Yeni link</button>
+       
+             
+                              
+           </div>
     </div>
   </div>
+</div>
 
 
-<!-- 
-<div class="wshipping-content-block" ">
-    <div class="container">
-    <div class="row">
-    <div class="col-12 col-lg-6 offset-lg-3">
-    <div class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-    <h2>DİQQƏT!</h2>
-    <p>Ödəniş olunmayan sifarişlər gün ərzində silinir.<br> Məhsul qiymətlərini ölkəyə uyğun valyutada və düzgün daxil edin.</p>
-    </div>
-    </div>
-    </div>
-    <div class="row">
-    
-    <div class="tracking-block">
-    <div class="put-reference-number">
-    <ul class="nav nav-tabs" role="tablist">
-     <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#menu0">
-    Türkiyə
-    </a></li>
-    </ul>
-    <div class="tab-content">
-    <div id="menu0" class="tab-pane fade in active show" data-currency="TRY">
-    <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-6">
-    <div class="row">
-    <div class="col-md-5 btn offset-md-7  totalInManatsOnline"></div>
-    <div style="display:none" class="col-md-5 offset-md-2 btn  totalInManats"></div>
-    </div>
-    </div>
-    </div>
-    <form action="" method="POST">
-    <input type="hidden" name="_token" value="9ezU5jNFJf4AGQBZVYaXtoqUuL2DcoN3olaRemah">
-    <input type="hidden" name="maxOrderSize" value="10">
-    <input type="hidden" name="cur" value="0.236">
-    <input type="hidden" name="servicefee" value="5">
-    <input type="hidden" name="country" value="15">
-    <div class="form-group" id="form-group" data-count="0">
-    <div class="order-item" data-order="0">
-    <div class="row">
-    <div class="col-12 col-md-4 col-lg-4">
-    <label>Link</label>
-    <div class="input-group ">
-    <input type="text" required="" class="form-control link" name="link_0">
-    </div>
-    </div>
-    <div class="col-12 col-md-2 col-lg-2">
-    <label>Məhsulun sayı</label>
-    <div class="input-group ">
-    <input type="number" value="1" step="1" min="1" max="99" onblur="if (!window.__cfRLUnblockHandlers) return false; $('.price').blur()" required="" class="form-control countofproduct" name="countofproduct_0">
-    </div>
-    </div>
-    <div class="col-12 col-md-2 col-lg-2">
-    <label>Qiymət</label>
-    <div class="input-group ">
-    <input type="number" step="0.01" class="form-control price" onblur="if (!window.__cfRLUnblockHandlers) return false; calculatePrice($(this))" name="price_0" required="">
-    <span class="currency">TRY</span>
-     </div>
-    </div>
-    <div class="col-12 col-md-2 col-lg-2">
-    <label>Kateqoriya</label>
-    <select name="slfatura_0" class="form-control slfature js-example-basic-single select2-hidden-accessible" required="" tabindex="-1" aria-hidden="true" data-select2-id="642">
-    <option value="">Kateqoriya seçin</option>
-    <option value="Elektronika" data-select2-id="644">Elektronika</option>
-    <option value="Ayaqqabı">Ayaqqabı</option>
-    <option value="Kosmetika &amp; Təmizlik">Kosmetika &amp; Təmizlik</option>
-    <option value="Uşaq">Uşaq</option>
-    <option value="Məişət texnikası">Məişət texnikası</option>
-    <option value="Oyuncaq">Oyuncaq</option>
-    <option value="Kitab">Kitab</option>
-    <option value="Məişət Texnikası">Məişət Ləvazimatı</option>
-    <option value="Dəftərxana ləvazimatı">Dəftərxana ləvazimatı</option>
-    <option value="Dərmanlar">Dərmanlar</option>
-    <option value="İdman malları">İdman malları</option>
-    <option value="Ehtiyat hissələri">Ehtiyat hissələri</option>
-    <option value="Noutbuklar və planşetlər">Noutbuklar və planşetlər</option>
-    <option value="Kompüter aksesuarları">Kompüter aksesuarları</option>
-    <option value="Saat">Saat</option>
-    <option value="Rəqəmsal kameralar">Rəqəmsal kameralar</option>
-    <option value="Oyun aksesuarları">Oyun aksesuarları</option>
-    <option value="Dekorativ kosmetika">Dekorativ kosmetika</option>
-    <option value="Qastronomiya">Qastronomiya</option>
-     <option value="Poverbank">Poverbank</option>
-    <option value="Avtomobil hissələri">Avtomobil hissələri</option>
-    <option value="Aktivator">Aktivator</option>
-    <option value="Alüminyum folyo">Alüminyum folyo</option>
-    <option value="Anahtarlık ">Anahtarlık </option>
-    <option value="Ayakkabı kutusu">Ayakkabı kutusu</option>
-    <option value="Amortisor ">Amortisor </option>
-    <option value="Ampul">Ampul</option>
-    <option value="Ana kart">Ana kart</option>
-    <option value="Arac tutucu">Arac tutucu</option>
-    <option value="Artikulator">Artikulator</option>
-    <option value="Askı">Askı</option>
-    <option value="Ateş ölçer">Ateş ölçer</option>
-    <option value="Atkı">Atkı</option>
-    <option value="Atlas">Atlas</option>
-    <option value="Atlet">Atlet</option>
-    <option value="Avize">Avize</option>
-    <option value="Ayak törpüsü">Ayak törpüsü</option>
-    <option value="Ayakkabı ">Ayakkabı </option>
-    <option value="Ayna">Ayna</option>
-    <option value="Bahçe eşyaları">Bahçe eşyaları</option>
-    <option value="Banyo filesi">Banyo filesi</option>
-    <option value="Bebek bezi">Bebek bezi</option>
-     <option value="Bebek malzemeleri">Bebek malzemeleri</option>
-    <option value="Bileklik">Bileklik</option>
-    <option value="Boxer">Boxer</option>
-    <option value="Bacak şekillendirici">Bacak şekillendirici</option>
-    <option value="Bag">Bag</option>
-    <option value="Baharat">Baharat</option>
-    <option value="Bakım seti">Bakım seti</option>
-    <option value="Bakıcı malzemesi">Bakıcı malzemesi</option>
-    <option value="Bandana ">Bandana </option>
-    <option value="Banyo aksessuarları">Banyo aksessuarları</option>
-    <option value="Bardak">Bardak</option>
-    <option value="Battaniye">Battaniye</option>
-    <option value="Bavul">Bavul</option>
-    <option value="Bebek arabası">Bebek arabası</option>
-    <option value="Bebek elbisesi">Bebek elbisesi</option>
-    <option value="Bebek arabası">Bebek arabası</option>
-    <option value="Bebek önlüyü">Bebek önlüyü</option>
-    <option value="Bel yastığı-sırt minderi">Bel yastığı-sırt minderi</option>
-    <option value="Bere ">Bere </option>
-    <option value="Bermuda">Bermuda</option>
-    <option value="Bez">Bez</option>
-    <option value="Biberon">Biberon</option>
-    <option value="Bijuteri">Bijuteri</option>
-     <option value="Bikini altı">Bikini altı</option>
-    <option value="Bikini üstü">Bikini üstü</option>
-    <option value="Bileyici ">Bileyici </option>
-    <option value="Bilgisayar">Bilgisayar</option>
-    <option value="Bilgisayar aksessuarı">Bilgisayar aksessuarı</option>
-    <option value=""></option>
-    <option value="	Bilinmir (malın dəqiq təsviri yazılmalıdır)"> Bilinmir (malın dəqiq təsviri yazılmalıdır)</option>
-    <option value="Bitkisel ürünler">Bitkisel ürünler</option>
-    <option value="Blender seti">Blender seti</option>
-    <option value="Bluz">Bluz</option>
-    <option value="Bornoz">Bornoz</option>
-    <option value="Boyama seti">Boyama seti</option>
-    <option value="Boyunluk">Boyunluk</option>
-    <option value="Bronzlaştırıcı">Bronzlaştırıcı</option>
-    <option value="Broş">Broş</option>
-    <option value="Bulaşık deterjanı">Bulaşık deterjanı</option>
-    <option value="Bulaşıklık">Bulaşıklık</option>
-    <option value="Burun aspiratoru">Burun aspiratoru</option>
-    <option value="Burun temizleme aspiratoru">Burun temizleme aspiratoru</option>
-    <option value="Büstiyer">Büstiyer</option>
-    <option value="Bıçak seti">Bıçak seti</option>
-    <option value="CD">CD</option>
-    <option value="Çekmece">Çekmece</option>
-     <option value="Çelik acı">Çelik acı</option>
-    <option value="Çerezlik sosluk">Çerezlik sosluk</option>
-    <option value="Çam ağacı">Çam ağacı</option>
-    <option value="Cam ürünleri">Cam ürünleri</option>
-    <option value="Çarşaf ">Çarşaf </option>
-    <option value="Ceket">Ceket</option>
-    <option value="Cep telefonu kılıfı">Cep telefonu kılıfı</option>
-    <option value="Çita">Çita</option>
-    <option value="ÇÖp kovası">ÇÖp kovası</option>
-    <option value="Cüzdan ">Cüzdan </option>
-    <option value="Cımbız">Cımbız</option>
-    <option value="Dövme ">Dövme </option>
-    <option value="DVD">DVD</option>
-    <option value="Davul-zurna">Davul-zurna</option>
-    <option value="Defter">Defter</option>
-    <option value="Dekorasyon">Dekorasyon</option>
-    <option value="Demlik">Demlik</option>
-    <option value="Deodorant">Deodorant</option>
-    <option value="Deterjan">Deterjan</option>
-    <option value="Dikiş makinesi">Dikiş makinesi</option>
-    <option value="Dizlik">Dizlik</option>
-    <option value="Diğer">Diğer</option>
-    <option value="Dikkatin güçlendirilmesi seti">Dikkatin güçlendirilmesi seti</option>
-     <option value="Diş fırçası">Diş fırçası</option>
-    <option value="Diş macunu">Diş macunu</option>
-    <option value="Doğum günü süsü">Doğum günü süsü</option>
-    <option value="Duvak">Duvak</option>
-    <option value="Duvar kağıtı">Duvar kağıtı</option>
-    <option value="Duvar lambası">Duvar lambası</option>
-    <option value="Duvar rafı">Duvar rafı</option>
-    <option value="Düzenleyici">Düzenleyici</option>
-    <option value="Epilator">Epilator</option>
-    <option value="Ebru başlangıç seti">Ebru başlangıç seti</option>
-    <option value="Elbise">Elbise</option>
-    <option value="Eldiven">Eldiven</option>
-    <option value="Emzik">Emzik</option>
-    <option value="Enjektor">Enjektor</option>
-    <option value="Epilasyon aleti">Epilasyon aleti</option>
-    <option value="Etek">Etek</option>
-    <option value="Etiket">Etiket</option>
-    <option value="Etiket makinesi">Etiket makinesi</option>
-    <option value="Ev aletleri">Ev aletleri</option>
-    <option value="Ev tekstili">Ev tekstili</option>
-    <option value="Ev telefonu">Ev telefonu</option>
-    <option value="Eşarf">Eşarf</option>
-    <option value="Eşofman takımı">Eşofman takımı</option>
-     <option value="Eşofman altı">Eşofman altı</option>
-    <option value="Fındık kırağacı">Fındık kırağacı</option>
-    <option value="Fare Haşere Kovucu">Fare Haşere Kovucu</option>
-    <option value="File">File</option>
-    <option value="Filtre klima">Filtre klima</option>
-    <option value="Fular">Fular</option>
-    <option value="Futbol forması">Futbol forması</option>
-    <option value="Fön makinesi">Fön makinesi</option>
-    <option value="Gel">Gel</option>
-    <option value="Gül suyu">Gül suyu</option>
-    <option value="Granit">Granit</option>
-    <option value="Garanti belgesi">Garanti belgesi</option>
-    <option value="Gecelik">Gecelik</option>
-    <option value="Gelinklik ">Gelinklik </option>
-    <option value="Gida">Gida</option>
-    <option value="Gida ve kurabiye">Gida ve kurabiye</option>
-    <option value="Gömlek">Gömlek</option>
-    <option value="Gözlük">Gözlük</option>
-    <option value="Gözlük camı">Gözlük camı</option>
-    <option value="Göz pompası">Göz pompası</option>
-    <option value="Hamak">Hamak</option>
-    <option value="Hamak kesici">Hamak kesici</option>
-    <option value="Hard disk">Hard disk</option>
-    <option value="Hafıza kartı">Hafıza kartı</option>
-    <option value="Halı">Halı</option>
-    <option value="Hamur kesici">Hamur kesici</option>
-    <option value="Hardal">Hardal</option>
-    <option value="Havlu">Havlu</option>
-    <option value="Hediye kutusu">Hediye kutusu</option>
-    <option value="Hoparlör">Hoparlör</option>
-    <option value="Hurç">Hurç</option>
-    <option value="Hırka">Hırka</option>
-    <option value="Kadeh">Kadeh</option>
-    <option value="Kapatıcı">Kapatıcı</option>
-    <option value="Kapı açarı">Kapı açarı</option>
-    <option value="Karaf">Karaf</option>
-    <option value="Kart">Kart</option>
-    <option value="Karton">Karton</option>
-    <option value="Keramika">Keramika</option>
-    <option value="Kılıf">Kılıf</option>
-    <option value="Kına">Kına</option>
-    <option value="Kaban">Kaban</option>
-    <option value="Kafes">Kafes</option>
-    <option value="Kahvaltı takımı">Kahvaltı takımı</option>
-    <option value="Kahvaltılık seti">Kahvaltılık seti</option>
-    <option value="Kahve">Kahve</option>
-    <option value="Kahve değirmeni">Kahve değirmeni</option>
-    <option value="Kahve makinesi">Kahve makinesi</option>
-    <option value="Kalem">Kalem</option>
-    <option value="Kalemlik">Kalemlik</option>
-    <option value="Kalemtraş">Kalemtraş</option>
-    <option value="Kamera">Kamera</option>
-    <option value="Kanquru">Kanquru</option>
-    <option value="Kapri">Kapri</option>
-    <option value="Karset">Karset</option>
-    <option value="Kartuş">Kartuş</option>
-    <option value="Kartuş tıpası">Kartuş tıpası</option>
-    <option value="Karışık üst giyim">Karışık üst giyim</option>
-    <option value="Kasap bıçağı">Kasap bıçağı</option>
-    <option value="Kaydırak">Kaydırak</option>
-    <option value="Kazak">Kazak</option>
-    <option value="Kaşık-bıçak seti">Kaşık-bıçak seti</option>
-    <option value="Kemeli etek">Kemeli etek</option>
-    <option value="Kemer">Kemer</option>
-    <option value="Kepçe">Kepçe</option>
-    <option value="Keçe">Keçe</option>
-    <option value="Kılçık tabançası">Kılçık tabançası</option>
-    <option value="Kimono">Kimono</option>
-    <option value="Kirpik kıvırıcı">Kirpik kıvırıcı</option>
-    <option value="Kitap">Kitap</option>
-    <option value="Kitaplık">Kitaplık</option>
-     <option value="Kişisel bakım">Kişisel bakım</option>
-    <option value="Klavye">Klavye</option>
-    <option value="Kolluk">Kolluk</option>
-    <option value="Koltuk">Koltuk</option>
-    <option value="Koltuk-masa örtüsü">Koltuk-masa örtüsü</option>
-    <option value="Korse">Korse</option>
-    <option value="Koruyucu">Koruyucu</option>
-    <option value="Kot pantolon">Kot pantolon</option>
-    <option value="Kozmetik">Kozmetik</option>
-    <option value="Kravat">Kravat</option>
-    <option value="Kulak tıkacı">Kulak tıkacı</option>
-    <option value="Kulaklık">Kulaklık</option>
-    <option value="Kum kalıbı">Kum kalıbı</option>
-    <option value="Kumanda">Kumanda</option>
-    <option value="Kupa">Kupa</option>
-    <option value="Köpek maması">Köpek maması</option>
-    <option value="Külot">Külot</option>
-    <option value="Küpe">Küpe</option>
-    <option value="Kırtasiye">Kırtasiye</option>
-    <option value="Lego">Lego</option>
-    <option value="Lokum">Lokum</option>
-    <option value="Lambader">Lambader</option>
-    <option value="Lens">Lens</option>
-    <option value="Limon sıkacağı">Limon sıkacağı</option>
-    <option value="Macun">Macun</option>
-    <option value="Makyaj fırçası">Makyaj fırçası</option>
-    <option value="Mause">Mause</option>
-    <option value="Mikrofon">Mikrofon</option>
-    <option value="Motor">Motor</option>
-    <option value="Maclaren">Maclaren</option>
-    <option value="Makara">Makara</option>
-    <option value="Makina halısı">Makina halısı</option>
-    <option value="Makyaj seti">Makyaj seti</option>
-    <option value="Masa sandalye">Masa sandalye</option>
-    <option value="Masa takvimi">Masa takvimi</option>
-    <option value="Masa örtüsü">Masa örtüsü</option>
-    <option value="Masaj aleti">Masaj aleti</option>
-    <option value="Masaj şiltesi">Masaj şiltesi</option>
-    <option value="Maske">Maske</option>
-    <option value="Matara">Matara</option>
-    <option value="Mayo/bikini">Mayo/bikini</option>
-    <option value="Mendil">Mendil</option>
-    <option value="Mobilya">Mobilya</option>
-    <option value="Mont">Mont</option>
-    <option value="Mumluk">Mumluk</option>
-    <option value="Mutfak robotu">Mutfak robotu</option>
-    <option value="Mısır patlatma makinesi">Mısır patlatma makinesi</option>
-     <option value="Mızıka">Mızıka</option>
-    <option value="Nevresim">Nevresim</option>
-    <option value="Oyun halısı">Oyun halısı</option>
-    <option value="Olta makinesi">Olta makinesi</option>
-    <option value="Optik lens">Optik lens</option>
-    <option value="Organizer">Organizer</option>
-    <option value="Otomobil yedek parça">Otomobil yedek parça</option>
-    <option value="Oyun jeli">Oyun jeli</option>
-    <option value="Oyuncak">Oyuncak</option>
-    <option value="Oyuncu seti">Oyuncu seti</option>
-    <option value="Pasta servis seti">Pasta servis seti</option>
-    <option value="Puding">Puding</option>
-    <option value="Palto">Palto</option>
-    <option value="Pandispanya un">Pandispanya un</option>
-    <option value="Panduf">Panduf</option>
-    <option value="Pantolon">Pantolon</option>
-    <option value="Panço">Panço</option>
-    <option value="Pardesü">Pardesü</option>
-    <option value="Pareo">Pareo</option>
-    <option value="Patik">Patik</option>
-    <option value="Peeling">Peeling</option>
-    <option value="Penye">Penye</option>
-    <option value="Perde,panjur">Perde,panjur</option>
-    <option value="Peçete">Peçete</option>
-    <option value="Pijama">Pijama</option>
-    <option value="Pike takımı">Pike takımı</option>
-    <option value="Pipet">Pipet</option>
-    <option value="Porselen">Porselen</option>
-    <option value="Port Bebe">Port Bebe</option>
-    <option value="Portföy">Portföy</option>
-    <option value="Poşet">Poşet</option>
-    <option value="Printer">Printer</option>
-    <option value="Protez saç">Protez saç</option>
-    <option value="Pudra">Pudra</option>
-    <option value="Puf">Puf</option>
-    <option value="Puset">Puset</option>
-    <option value="Pazzle">Pazzle</option>
-    <option value="Qramofon">Qramofon</option>
-    <option value="Radyo">Radyo</option>
-    <option value="Raf">Raf</option>
-    <option value="Rende">Rende</option>
-    <option value="Renkli Muadil">Renkli Muadil</option>
-    <option value="Sabahlık">Sabahlık</option>
-    <option value="Sabun">Sabun</option>
-    <option value="Saç bandı">Saç bandı</option>
-    <option value="Saç boyama tozu">Saç boyama tozu</option>
-    <option value="Saksı">Saksı</option>
-    <option value="Sarj kablosu">Sarj kablosu</option>
-    <option value="Saz bağlama">Saz bağlama</option>
-    <option value="Sedye">Sedye</option>
-    <option value="Sehpa">Sehpa</option>
-    <option value="Slinq">Slinq</option>
-    <option value="Spor ayakkabı">Spor ayakkabı</option>
-    <option value="Suzgec">Suzgec</option>
-    <option value="Saat">Saat</option>
-    <option value="Sabun kalıbı">Sabun kalıbı</option>
-    <option value="Saklama kabı">Saklama kabı</option>
-    <option value="Saklama poşeti">Saklama poşeti</option>
-    <option value="Salopet">Salopet</option>
-    <option value="Sandalye kılıfı">Sandalye kılıfı</option>
-    <option value="Saç boyası">Saç boyası</option>
-    <option value="Saç makinesi">Saç makinesi</option>
-    <option value="Saç maskesi">Saç maskesi</option>
-    <option value="Sebil">Sebil</option>
-    <option value="Semaver">Semaver</option>
-    <option value="Servis seti">Servis seti</option>
-    <option value="Ses sistemi">Ses sistemi</option>
-    <option value="Seyahat seti">Seyahat seti</option>
-    <option value="Silgi">Silgi</option>
-    <option value="Siyah nokta temizleyici">Siyah nokta temizleyici</option>
-    <option value="Slikon">Slikon</option>
-     <option value="Spor ekipmanları">Spor ekipmanları</option>
-    <option value="Spor gidası">Spor gidası</option>
-    <option value="Spray">Spray</option>
-    <option value="Sprey">Sprey</option>
-    <option value="Stiker">Stiker</option>
-    <option value="Su filtresi">Su filtresi</option>
-    <option value="Su pompası">Su pompası</option>
-    <option value="Sütyen">Sütyen</option>
-    <option value="Süveter">Süveter</option>
-    <option value="Sıyırıcı">Sıyırıcı</option>
-    <option value="T-shirt">T-shirt</option>
-    <option value="Tepsi">Tepsi</option>
-    <option value="Toka">Toka</option>
-    <option value="Toplu iğne ">Toplu iğne </option>
-    <option value="Tuz">Tuz</option>
-    <option value="Tıraş bıçağı ">Tıraş bıçağı </option>
-    <option value="Un">Un</option>
-    <option value="Uydu alıcısı">Uydu alıcısı</option>
-    <option value="Uyku seti">Uyku seti</option>
-    <option value="Vücut terazi">Vücut terazi</option>
-    <option value="Valiz">Valiz</option>
-    <option value="Vinil kaplama">Vinil kaplama</option>
-    <option value="Vitamin">Vitamin</option>
-    <option value="Vizit kart">Vizit kart</option>
-    <option value="Vücut geliştiricisi">Vücut geliştiricisi</option>
-    <option value="Wrislet">Wrislet</option>
-    <option value="Yapıştırıcı suyu">Yapıştırıcı suyu</option>
-    <option value="Yastık kılıfı">Yastık kılıfı</option>
-    <option value="Yastık">Yastık</option>
-    <option value="Yatak tepsisi">Yatak tepsisi</option>
-    <option value="Yedek parça">Yedek parça</option>
-    <option value="Yelek">Yelek</option>
-    <option value="Yemek takımı">Yemek takımı</option>
-    <option value="Yorgan">Yorgan</option>
-    <option value="Yulaf">Yulaf</option>
-    <option value="Yüzme paleti">Yüzme paleti</option>
-    <option value="Abajur">Abajur</option>
-    <option value="Abakus">Abakus</option>
-    <option value="Abiye">Abiye</option>
-    <option value="Adaptör">Adaptör</option>
-    <option value="Albom">Albom</option>
-    <option value="Alez">Alez</option>
-    <option value="Alüminium list">Alüminium list</option>
-    <option value="Anorak">Anorak</option>
-    <option value="Aparat">Aparat</option>
-    <option value="Aslan pençesi">Aslan pençesi</option>
-    <option value="Aspirator">Aspirator</option>
-     <option value="Atkı bere takım">Atkı bere takım</option>
-    <option value="Ayakkabı kutusu">Ayakkabı kutusu</option>
-    <option value="Ayakkabı rampası">Ayakkabı rampası</option>
-    <option value="Balık yemi">Balık yemi</option>
-    <option value="Balon">Balon</option>
-    <option value="Bant">Bant</option>
-    <option value="Bebek arabası">Bebek arabası</option>
-    <option value="Bebek eğitim seti">Bebek eğitim seti</option>
-    <option value="Bebek giyim">Bebek giyim</option>
-    <option value="Bebek iç giyim">Bebek iç giyim</option>
-    <option value="Bebek sepeti">Bebek sepeti</option>
-    <option value="Bebek tulumu">Bebek tulumu</option>
-    <option value="Bellek">Bellek</option>
-    <option value="Beslenme çantası">Beslenme çantası</option>
-    <option value="Bisküvi">Bisküvi</option>
-    <option value="Body">Body</option>
-    <option value="Bot">Bot</option>
-    <option value="Boya">Boya</option>
-    <option value="Buhar makinesi">Buhar makinesi</option>
-    <option value="Buz makinesi">Buz makinesi</option>
-    <option value="Çatal">Çatal</option>
-    <option value="Çaydanlık">Çaydanlık</option>
-    <option value="Çerezlik">Çerezlik</option>
-     <option value="Cezve">Cezve</option>
-    <option value="Cibinlik">Cibinlik</option>
-    <option value="Çiçek">Çiçek</option>
-    <option value="Cihaz">Cihaz</option>
-    <option value="Cila">Cila</option>
-    <option value="Cilt bakım seti">Cilt bakım seti</option>
-    <option value="Civi">Civi</option>
-    <option value="Çocuk bisiklet">Çocuk bisiklet</option>
-    <option value="Cüzdan kemer anahtarlık set">Cüzdan kemer anahtarlık set</option>
-    <option value="Dart">Dart</option>
-    <option value="Daş">Daş</option>
-    <option value="Dental tools">Dental tools</option>
-    <option value="Dergi">Dergi</option>
-    <option value="Derma roller">Derma roller</option>
-    <option value="Dolap içi düzenleyici raf">Dolap içi düzenleyici raf</option>
-    <option value="Eğitim seti">Eğitim seti</option>
-    <option value="Ekmek kadayıf">Ekmek kadayıf</option>
-    <option value="Ekmeklik">Ekmeklik</option>
-    <option value="Elektrikli süpürge">Elektrikli süpürge</option>
-    <option value="Emzik zinciri">Emzik zinciri</option>
-    <option value="Emzirme aleti">Emzirme aleti</option>
-    <option value="Enstruman">Enstruman</option>
-    <option value="Erkek bakım seti">Erkek bakım seti</option>
-     <option value="Ev malzemesi">Ev malzemesi</option>
-    <option value="Filtre">Filtre</option>
-    <option value="Fincan">Fincan</option>
-    <option value="Fırça">Fırça</option>
-    <option value="Fondöten">Fondöten</option>
-    <option value="Fotoğraf makinesi">Fotoğraf makinesi</option>
-    <option value="Fren balatası">Fren balatası</option>
-    <option value="Giyim">Giyim</option>
-    <option value="Göz bandı">Göz bandı</option>
-    <option value="Gübre">Gübre</option>
-    <option value="Güllac">Güllac</option>
-    <option value="Güneş kremi">Güneş kremi</option>
-    <option value="Güveç">Güveç</option>
-    <option value="Halhal">Halhal</option>
-    <option value="Hamak">Hamak</option>
-    <option value="Harita">Harita</option>
-    <option value="Hava filtresi">Hava filtresi</option>
-    <option value="Haylayter">Haylayter</option>
-    <option value="Hayvan cilt bakım">Hayvan cilt bakım</option>
-    <option value="Hayvan yatağı">Hayvan yatağı</option>
-    <option value="Hazırlık seti">Hazırlık seti</option>
-    <option value="Hesap makinesi">Hesap makinesi</option>
-    <option value="Hurc">Hurc</option>
-    <option value="Ink">Ink</option>
-     <option value="Insan iskeleti">Insan iskeleti</option>
-    <option value="Iplik">Iplik</option>
-    <option value="Işık seti">Işık seti</option>
-    <option value="Jel">Jel</option>
-    <option value="Kablo">Kablo</option>
-    <option value="Kablosuz mouse">Kablosuz mouse</option>
-    <option value="Kahve fincan takımı">Kahve fincan takımı</option>
-    <option value="Kahve seti">Kahve seti</option>
-    <option value="Kakao tozu">Kakao tozu</option>
-    <option value="Kanguru">Kanguru</option>
-    <option value="Kapak">Kapak</option>
-    <option value="Kapı">Kapı</option>
-    <option value="Kapı aksesuarı">Kapı aksesuarı</option>
-    <option value="Karışık hazır malzeme">Karışık hazır malzeme</option>
-    <option value="Kaş kalemi">Kaş kalemi</option>
-    <option value="Kase">Kase</option>
-    <option value="Kask">Kask</option>
-    <option value="Kaşık">Kaşık</option>
-    <option value="Kedi köpek kulubesi">Kedi köpek kulubesi</option>
-    <option value="Kedi tırmalama">Kedi tırmalama</option>
-    <option value="Kepek">Kepek</option>
-    <option value="Kese">Kese</option>
-    <option value="Kitap (klasikler seti)">Kitap (klasikler seti)</option>
-     <option value="Kolanya">Kolanya</option>
-    <option value="Kolostomi torbası">Kolostomi torbası</option>
-    <option value="Kolye">Kolye</option>
-    <option value="Köpük">Köpük</option>
-    <option value="Korna">Korna</option>
-    <option value="Kozmetik kabı">Kozmetik kabı</option>
-    <option value="Kozmetik çantası">Kozmetik çantası</option>
-    <option value="Kraker">Kraker</option>
-    <option value="Krampon">Krampon</option>
-    <option value="Kredi kartlık">Kredi kartlık</option>
-    <option value="Krem">Krem</option>
-    <option value="Kulak çubuğu">Kulak çubuğu</option>
-    <option value="Kum">Kum</option>
-    <option value="Kumaş">Kumaş</option>
-    <option value="Kumbara">Kumbara</option>
-    <option value="Kuş yemi">Kuş yemi</option>
-    <option value="Kutu">Kutu</option>
-    <option value="Kutu seti">Kutu seti</option>
-    <option value="Led işık">Led işık</option>
-    <option value="Lens suyu">Lens suyu</option>
-    <option value="Limon qabı">Limon qabı</option>
-    <option value="Makas">Makas</option>
-    <option value="Makine">Makine</option>
-    <option value="Makyaj düzenleyici">Makyaj düzenleyici</option>
-    <option value="Mama kabı">Mama kabı</option>
-    <option value="Mama sandalyesi">Mama sandalyesi</option>
-    <option value="Mandal">Mandal</option>
-    <option value="Masa">Masa</option>
-    <option value="Masa örtüsü">Masa örtüsü</option>
-    <option value="Maskara">Maskara</option>
-    <option value="Mat">Mat</option>
-    <option value="Mayo">Mayo</option>
-    <option value="Maşa">Maşa</option>
-    <option value="Maşın şüşəsi">Maşın şüşəsi</option>
-    <option value="Metre">Metre</option>
-    <option value="Microcard">Microcard</option>
-    <option value="Mikser">Mikser</option>
-    <option value="Minder">Minder</option>
-    <option value="Modem">Modem</option>
-    <option value="Motor örtüsü">Motor örtüsü</option>
-    <option value="Mum">Mum</option>
-    <option value="Mutfak eşyaları">Mutfak eşyaları</option>
-    <option value="Mutfak seti">Mutfak seti</option>
-    <option value="Nargile seti">Nargile seti</option>
-    <option value="Nem alma cihazı">Nem alma cihazı</option>
-    <option value="Ofis koltuğu koruma plastiği">Ofis koltuğu koruma plastiği</option>
-    <option value="Olta kamisi">Olta kamisi</option>
-     <option value="Örtü">Örtü</option>
-    <option value="Oyun hamuru">Oyun hamuru</option>
-    <option value="Oyun kolu">Oyun kolu</option>
-    <option value="Oyun konsolu">Oyun konsolu</option>
-    <option value="Palet">Palet</option>
-    <option value="Papyon">Papyon</option>
-    <option value="Parfüm">Parfüm</option>
-    <option value="Parka">Parka</option>
-    <option value="Paspas">Paspas</option>
-    <option value="Paten">Paten</option>
-    <option value="Ped">Ped</option>
-    <option value="Peluş">Peluş</option>
-    <option value="Perde">Perde</option>
-    <option value="Peçetelik">Peçetelik</option>
-    <option value="Pikap">Pikap</option>
-    <option value="Piknik seti">Piknik seti</option>
-    <option value="Poster">Poster</option>
-    <option value="Protein">Protein</option>
-    <option value="Resim şovalyesi">Resim şovalyesi</option>
-    <option value="Rimel">Rimel</option>
-    <option value="Roll-on">Roll-on</option>
-    <option value="Ruj">Ruj</option>
-    <option value="Rüzgarlık">Rüzgarlık</option>
-    <option value="Saç bakım">Saç bakım</option>
-     <option value="Sakız">Sakız</option>
-    <option value="Salep">Salep</option>
-    <option value="Şampuan">Şampuan</option>
-    <option value="Satranc">Satranc</option>
-    <option value="Skuter">Skuter</option>
-    <option value="Seccade">Seccade</option>
-    <option value="Şeker">Şeker</option>
-    <option value="Sepet">Sepet</option>
-    <option value="Seramik hamur">Seramik hamur</option>
-    <option value="Sira aparatı">Sira aparatı</option>
-    <option value="Şişme havuz">Şişme havuz</option>
-    <option value="Silikon kalıp">Silikon kalıp</option>
-    <option value="Solar taş">Solar taş</option>
-    <option value="Solusyon">Solusyon</option>
-    <option value="Spor sütyen">Spor sütyen</option>
-    <option value="Su arıtma cihazı">Su arıtma cihazı</option>
-    <option value="Su ısıtıcı">Su ısıtıcı</option>
-    <option value="Sudoku">Sudoku</option>
-    <option value="Südyen yıkama aparatı">Südyen yıkama aparatı</option>
-    <option value="Suluk">Suluk</option>
-    <option value="Sünger">Sünger</option>
-    <option value="Sürahi">Sürahi</option>
-    <option value="Sütyen askısı">Sütyen askısı</option>
-    <option value="Sütyen topu ">Sütyen topu </option>
-    <option value="Sweatshirt">Sweatshirt</option>
-    <option value="t-shirt pantolon">t-shirt pantolon</option>
-    <option value="takım">takım</option>
-    <option value="tartı">tartı</option>
-    <option value="taş">taş</option>
-    <option value="tatlı kalıbı">tatlı kalıbı</option>
-    <option value="tava">tava</option>
-    <option value="tekmelik ">tekmelik </option>
-    <option value="temizlik seti">temizlik seti</option>
-    <option value="tesettür">tesettür</option>
-    <option value="tırnak kurutucu">tırnak kurutucu</option>
-    <option value="Toner">Toner</option>
-    <option value="Toz torbası">Toz torbası</option>
-    <option value="Tıraş makinesi">Tıraş makinesi</option>
-    <option value="Tuzluk">Tuzluk</option>
-    <option value="Un">Un</option>
-    <option value="USB">USB</option>
-    <option value="Uydu alıcı">Uydu alıcı</option>
-    <option value="Vantilatör">Vantilatör</option>
-    <option value="Vazo">Vazo</option>
-    <option value="Vida">Vida</option>
-    <option value="Vinil">Vinil</option>
-    <option value="Şekerlik">Şekerlik</option>
-     <option value="Yağ">Yağ</option>
-    <option value="Yağmurluk">Yağmurluk</option>
-    <option value="Yapıştırıcı">Yapıştırıcı</option>
-    <option value="Yatak">Yatak</option>
-    <option value="Yatak örtüsü">Yatak örtüsü</option>
-    <option value="Yedek başlık">Yedek başlık</option>
-    <option value="Yemek termosu">Yemek termosu</option>
-    <option value="Yulaf samanı">Yulaf samanı</option>
-    <option value="Yumuşatıcı">Yumuşatıcı</option>
-    <option value="Yüzme seti">Yüzme seti</option>
-    <option value="Yüzük">Yüzük</option>
-    <option value="Yüzük kutusu">Yüzük kutusu</option>
-    <option value="Zımba ">Zımba </option>
-    <option value="Çanta">Çanta</option>
-    <option value="Çatal kaşık bıçak seti">Çatal kaşık bıçak seti</option>
-    <option value="Çay ">Çay </option>
-    <option value="Çay seti">Çay seti</option>
-    <option value="Çerçeve">Çerçeve</option>
-    <option value="Çeyiz seti">Çeyiz seti</option>
-    <option value="Çikolata">Çikolata</option>
-    <option value="Çorap">Çorap</option>
-    <option value="Ölçüm çubuğu">Ölçüm çubuğu</option>
-    <option value="Ön tampon-lip">Ön tampon-lip</option>
-    <option value="Öğrenci seti">Öğrenci seti</option>
-    <option value="Ütü">Ütü</option>
-    <option value="Çadır">Çadır</option>
-    <option value="Çakmak">Çakmak</option>
-    <option value="Çalışma masası">Çalışma masası</option>
-    <option value="Çay makinesi">Çay makinesi</option>
-    <option value="Önlük">Önlük</option>
-    <option value="Insulin taşıma çantası">Insulin taşıma çantası</option>
-    <option value="Islak mendil">Islak mendil</option>
-    <option value="Iç giyim">Iç giyim</option>
-    <option value="Şal eşarp">Şal eşarp</option>
-    <option value="Şapka">Şapka</option>
-    <option value="Şarj cihazı">Şarj cihazı</option>
-    <option value="Şarjör kılıfı">Şarjör kılıfı</option>
-    <option value="Şarzlı diş fırçası">Şarzlı diş fırçası</option>
-    <option value="Şemsiye">Şemsiye</option>
-    <option value="Şerit">Şerit</option>
-    <option value="Şort">Şort</option>
-    <option value="Şamdan">Şamdan</option>
-    <option value="Şezlonq">Şezlonq</option>
-    <option value="Şişe">Şişe</option>
-    <option value="Ştativ">Ştativ</option>
-    <option value="">Tayt</option>
-    <option value="">Tunik</option>
-     <option value="">Tulum</option>
-    <option value="">Çay</option>
-    <option value="">bebek maması</option>
-    <option value="">Tablo</option>
-    </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" data-select2-id="643" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-slfatura_0-r9-container"><span class="select2-selection__rendered" id="select2-slfatura_0-r9-container" role="textbox" aria-readonly="true" title="Elektronika">Elektronika</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-12 col-md-4 col-lg-4">
-    <label>Rəngi</label>
-    <div class="input-group">
-    <input placeholder="Rəng" name="note_color_0" class="notes form-control" required="">
-    </div>
-    </div>
-    <div class="col-12 col-md-4 col-lg-4">
-    <label>Ölçüsü</label>
-    <div class="input-group">
-    <input placeholder="Ölçüsü" name="note_size_0" class="notes form-control" required="">
-    </div>
-    </div>
-    <div class="col-12 col-md-4 col-lg-4">
-    <label>Əlavə qeyd</label>
-    <div class="input-group">
-    <textarea placeholder="Əlavə qeyd" name="notes_0" class="notes form-control"></textarea>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-md-2">
-    <button id="addNewRow" role="button" class="custom-btn cbtn-yellow  cbtn-shadow"> <i class="fa fa-plus"></i> Yeni link</button>
-    </div>
-    <div class="col-md-3" style="margin:0 auto">
-    <div class="checkbox">
-    <input type="checkbox" id="try_quide" class="css-checkbox">
-    <label for="try_quide" class="css-label">Türkiyə daxili kuryer xərci ilə razıyam</label>
-    </div>
-    <div class="checkbox">
-    <input type="checkbox" id="qayda" class="css-checkbox">
-    <label for="qayda" class="css-label">Qaydalarla <span id="qaydaText" style="text-decoration: underline;cursor: pointer;color: #6e6e6e;">Razıyam</span></label>
-     </div>
-    </div>
-    <div class="col-md-1" style="margin:0 auto">
-    </div>
-    <div class="col-md-3" style="margin:0 auto">
-    <div class="checkbox">
-    <input type="checkbox" name="fast_order" id="pay_9" class="css-checkbox">
-    <label for="pay_9" class="css-label">Sürətli sifariş </label>
-    </div>
-    </div>
-    <div class="col-md-3" style="padding-right:5px;">
-    <button disabled="" type="submit" id="btnSubmit" class="custom-btn cbtn-sky text-uppercase cbtn-shadow pull-right">SİFARİŞ EDİN</button>
-    </div>
-    </div>
-    </form>
-    </div>
-    <div id="menu1" class="tab-pane fade " data-currency="USD">
-    <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-6">
-    <div class="row">
-    <div class="col-md-5 btn offset-md-7  totalInManatsOnline"></div>
-    <div style="display:none" class="col-md-5 offset-md-2 btn  totalInManats"></div>
-    </div>
-    </div>
-    </div>
-    <form action="" method="POST">
-    <input type="hidden" name="_token" value="9ezU5jNFJf4AGQBZVYaXtoqUuL2DcoN3olaRemah">
-    <input type="hidden" name="maxOrderSize" value="10">
-    <input type="hidden" name="cur" value="1.703">
-    <input type="hidden" name="servicefee" value="5">
-    <input type="hidden" name="country" value="16">
-    <div class="form-group" id="form-group" data-count="0">
-    <div class="order-item" data-order="0">
-    <div class="row">
-    <div class="col-12 col-md-4 col-lg-4">
-    <label>Link</label>
-    <div class="input-group ">
-    <input type="text" required="" class="form-control link" name="link_0">
-    </div>
-    </div>
-    <div class="col-12 col-md-2 col-lg-2">
-    <label>Məhsulun sayı</label>
-    <div class="input-group ">
-    <input type="number" value="1" step="1" min="1" max="99" onblur="if (!window.__cfRLUnblockHandlers) return false; $('.price').blur()" required="" class="form-control countofproduct" name="countofproduct_0">
-    </div>
-    </div>
-    <div class="col-12 col-md-2 col-lg-2">
-    <label>Qiymət</label>
-    <div class="input-group ">
-    <input type="number" step="0.01" class="form-control price" onblur="if (!window.__cfRLUnblockHandlers) return false; calculatePrice($(this))" name="price_0" required="">
-    <span class="currency">USD</span>
-    </div>
-    </div>
-    <div class="col-12 col-md-2 col-lg-2">
-    <label>Kateqoriya</label>
-    <select name="slfatura_0" class="form-control slfature js-example-basic-single select2-hidden-accessible" required="" tabindex="-1" aria-hidden="true" data-select2-id="1277">
-    <option value="" data-select2-id="1279">Kateqoriya seçin</option>
-    <option value="Elektronika">Elektronika</option>
-    <option value="Ayaqqabı">Ayaqqabı</option>
-    <option value="Kosmetika &amp; Təmizlik">Kosmetika &amp; Təmizlik</option>
-    <option value="Uşaq">Uşaq</option>
-    <option value="Məişət texnikası">Məişət texnikası</option>
-    <option value="Oyuncaq">Oyuncaq</option>
-    <option value="Kitab">Kitab</option>
-    <option value="Məişət Texnikası">Məişət Ləvazimatı</option>
-    <option value="Dəftərxana ləvazimatı">Dəftərxana ləvazimatı</option>
-    <option value="Dərmanlar">Dərmanlar</option>
-    <option value="İdman malları">İdman malları</option>
-    <option value="Ehtiyat hissələri">Ehtiyat hissələri</option>
-    <option value="Noutbuklar və planşetlər">Noutbuklar və planşetlər</option>
-    <option value="Kompüter aksesuarları">Kompüter aksesuarları</option>
-    <option value="Saat">Saat</option>
-     <option value="Rəqəmsal kameralar">Rəqəmsal kameralar</option>
-    <option value="Oyun aksesuarları">Oyun aksesuarları</option>
-    <option value="Dekorativ kosmetika">Dekorativ kosmetika</option>
-    <option value="Qastronomiya">Qastronomiya</option>
-    <option value="Poverbank">Poverbank</option>
-    <option value="Avtomobil hissələri">Avtomobil hissələri</option>
-    <option value="Aktivator">Aktivator</option>
-    <option value="Alüminyum folyo">Alüminyum folyo</option>
-    <option value="Anahtarlık ">Anahtarlık </option>
-    <option value="Ayakkabı kutusu">Ayakkabı kutusu</option>
-    <option value="Amortisor ">Amortisor </option>
-    <option value="Ampul">Ampul</option>
-    <option value="Ana kart">Ana kart</option>
-    <option value="Arac tutucu">Arac tutucu</option>
-    <option value="Artikulator">Artikulator</option>
-    <option value="Askı">Askı</option>
-    <option value="Ateş ölçer">Ateş ölçer</option>
-    <option value="Atkı">Atkı</option>
-    <option value="Atlas">Atlas</option>
-    <option value="Atlet">Atlet</option>
-    <option value="Avize">Avize</option>
-    <option value="Ayak törpüsü">Ayak törpüsü</option>
-    <option value="Ayakkabı ">Ayakkabı </option>
-     <option value="Ayna">Ayna</option>
-    <option value="Bahçe eşyaları">Bahçe eşyaları</option>
-    <option value="Banyo filesi">Banyo filesi</option>
-    <option value="Bebek bezi">Bebek bezi</option>
-    <option value="Bebek malzemeleri">Bebek malzemeleri</option>
-    <option value="Bileklik">Bileklik</option>
-    <option value="Boxer">Boxer</option>
-    <option value="Bacak şekillendirici">Bacak şekillendirici</option>
-    <option value="Bag">Bag</option>
-    <option value="Baharat">Baharat</option>
-    <option value="Bakım seti">Bakım seti</option>
-    <option value="Bakıcı malzemesi">Bakıcı malzemesi</option>
-    <option value="Bandana ">Bandana </option>
-    <option value="Banyo aksessuarları">Banyo aksessuarları</option>
-    <option value="Bardak">Bardak</option>
-    <option value="Battaniye">Battaniye</option>
-    <option value="Bavul">Bavul</option>
-    <option value="Bebek arabası">Bebek arabası</option>
-    <option value="Bebek elbisesi">Bebek elbisesi</option>
-    <option value="Bebek arabası">Bebek arabası</option>
-    <option value="Bebek önlüyü">Bebek önlüyü</option>
-    <option value="Bel yastığı-sırt minderi">Bel yastığı-sırt minderi</option>
-    <option value="Bere ">Bere </option>
-     <option value="Bermuda">Bermuda</option>
-    <option value="Bez">Bez</option>
-    <option value="Biberon">Biberon</option>
-    <option value="Bijuteri">Bijuteri</option>
-    <option value="Bikini altı">Bikini altı</option>
-    <option value="Bikini üstü">Bikini üstü</option>
-    <option value="Bileyici ">Bileyici </option>
-    <option value="Bilgisayar">Bilgisayar</option>
-    <option value="Bilgisayar aksessuarı">Bilgisayar aksessuarı</option>
-    <option value=""></option>
-    <option value="	Bilinmir (malın dəqiq təsviri yazılmalıdır)"> Bilinmir (malın dəqiq təsviri yazılmalıdır)</option>
-    <option value="Bitkisel ürünler">Bitkisel ürünler</option>
-    <option value="Blender seti">Blender seti</option>
-    <option value="Bluz">Bluz</option>
-    <option value="Bornoz">Bornoz</option>
-    <option value="Boyama seti">Boyama seti</option>
-    <option value="Boyunluk">Boyunluk</option>
-    <option value="Bronzlaştırıcı">Bronzlaştırıcı</option>
-    <option value="Broş">Broş</option>
-    <option value="Bulaşık deterjanı">Bulaşık deterjanı</option>
-    <option value="Bulaşıklık">Bulaşıklık</option>
-    <option value="Burun aspiratoru">Burun aspiratoru</option>
-    <option value="Burun temizleme aspiratoru">Burun temizleme aspiratoru</option>
-    <option value="Büstiyer">Büstiyer</option>
-    <option value="Bıçak seti">Bıçak seti</option>
-    <option value="CD">CD</option>
-    <option value="Çekmece">Çekmece</option>
-    <option value="Çelik acı">Çelik acı</option>
-    <option value="Çerezlik sosluk">Çerezlik sosluk</option>
-    <option value="Çam ağacı">Çam ağacı</option>
-    <option value="Cam ürünleri">Cam ürünleri</option>
-    <option value="Çarşaf ">Çarşaf </option>
-    <option value="Ceket">Ceket</option>
-    <option value="Cep telefonu kılıfı">Cep telefonu kılıfı</option>
-    <option value="Çita">Çita</option>
-    <option value="ÇÖp kovası">ÇÖp kovası</option>
-    <option value="Cüzdan ">Cüzdan </option>
-    <option value="Cımbız">Cımbız</option>
-    <option value="Dövme ">Dövme </option>
-    <option value="DVD">DVD</option>
-    <option value="Davul-zurna">Davul-zurna</option>
-    <option value="Defter">Defter</option>
-    <option value="Dekorasyon">Dekorasyon</option>
-    <option value="Demlik">Demlik</option>
-    <option value="Deodorant">Deodorant</option>
-    <option value="Deterjan">Deterjan</option>
-     <option value="Dikiş makinesi">Dikiş makinesi</option>
-    <option value="Dizlik">Dizlik</option>
-    <option value="Diğer">Diğer</option>
-    <option value="Dikkatin güçlendirilmesi seti">Dikkatin güçlendirilmesi seti</option>
-    <option value="Diş fırçası">Diş fırçası</option>
-    <option value="Diş macunu">Diş macunu</option>
-    <option value="Doğum günü süsü">Doğum günü süsü</option>
-    <option value="Duvak">Duvak</option>
-    <option value="Duvar kağıtı">Duvar kağıtı</option>
-    <option value="Duvar lambası">Duvar lambası</option>
-    <option value="Duvar rafı">Duvar rafı</option>
-    <option value="Düzenleyici">Düzenleyici</option>
-    <option value="Epilator">Epilator</option>
-    <option value="Ebru başlangıç seti">Ebru başlangıç seti</option>
-    <option value="Elbise">Elbise</option>
-    <option value="Eldiven">Eldiven</option>
-    <option value="Emzik">Emzik</option>
-    <option value="Enjektor">Enjektor</option>
-    <option value="Epilasyon aleti">Epilasyon aleti</option>
-    <option value="Etek">Etek</option>
-    <option value="Etiket">Etiket</option>
-    <option value="Etiket makinesi">Etiket makinesi</option>
-    <option value="Ev aletleri">Ev aletleri</option>
-     <option value="Ev tekstili">Ev tekstili</option>
-    <option value="Ev telefonu">Ev telefonu</option>
-    <option value="Eşarf">Eşarf</option>
-    <option value="Eşofman takımı">Eşofman takımı</option>
-    <option value="Eşofman altı">Eşofman altı</option>
-    <option value="Fındık kırağacı">Fındık kırağacı</option>
-    <option value="Fare Haşere Kovucu">Fare Haşere Kovucu</option>
-    <option value="File">File</option>
-    <option value="Filtre klima">Filtre klima</option>
-    <option value="Fular">Fular</option>
-    <option value="Futbol forması">Futbol forması</option>
-    <option value="Fön makinesi">Fön makinesi</option>
-    <option value="Gel">Gel</option>
-    <option value="Gül suyu">Gül suyu</option>
-    <option value="Granit">Granit</option>
-    <option value="Garanti belgesi">Garanti belgesi</option>
-    <option value="Gecelik">Gecelik</option>
-    <option value="Gelinklik ">Gelinklik </option>
-    <option value="Gida">Gida</option>
-    <option value="Gida ve kurabiye">Gida ve kurabiye</option>
-    <option value="Gömlek">Gömlek</option>
-    <option value="Gözlük">Gözlük</option>
-    <option value="Gözlük camı">Gözlük camı</option>
-     <option value="Göz pompası">Göz pompası</option>
-    <option value="Hamak">Hamak</option>
-    <option value="Hamak kesici">Hamak kesici</option>
-    <option value="Hard disk">Hard disk</option>
-    <option value="Hafıza kartı">Hafıza kartı</option>
-    <option value="Halı">Halı</option>
-    <option value="Hamur kesici">Hamur kesici</option>
-    <option value="Hardal">Hardal</option>
-    <option value="Havlu">Havlu</option>
-    <option value="Hediye kutusu">Hediye kutusu</option>
-    <option value="Hoparlör">Hoparlör</option>
-    <option value="Hurç">Hurç</option>
-    <option value="Hırka">Hırka</option>
-    <option value="Kadeh">Kadeh</option>
-    <option value="Kapatıcı">Kapatıcı</option>
-    <option value="Kapı açarı">Kapı açarı</option>
-    <option value="Karaf">Karaf</option>
-    <option value="Kart">Kart</option>
-    <option value="Karton">Karton</option>
-    <option value="Keramika">Keramika</option>
-    <option value="Kılıf">Kılıf</option>
-    <option value="Kına">Kına</option>
-    <option value="Kaban">Kaban</option>
-    <option value="Kafes">Kafes</option>
-     <option value="Kahvaltı takımı">Kahvaltı takımı</option>
-    <option value="Kahvaltılık seti">Kahvaltılık seti</option>
-    <option value="Kahve">Kahve</option>
-    <option value="Kahve değirmeni">Kahve değirmeni</option>
-    <option value="Kahve makinesi">Kahve makinesi</option>
-    <option value="Kalem">Kalem</option>
-    <option value="Kalemlik">Kalemlik</option>
-    <option value="Kalemtraş">Kalemtraş</option>
-    <option value="Kamera">Kamera</option>
-    <option value="Kanquru">Kanquru</option>
-    <option value="Kapri">Kapri</option>
-    <option value="Karset">Karset</option>
-    <option value="Kartuş">Kartuş</option>
-    <option value="Kartuş tıpası">Kartuş tıpası</option>
-    <option value="Karışık üst giyim">Karışık üst giyim</option>
-    <option value="Kasap bıçağı">Kasap bıçağı</option>
-    <option value="Kaydırak">Kaydırak</option>
-    <option value="Kazak">Kazak</option>
-    <option value="Kaşık-bıçak seti">Kaşık-bıçak seti</option>
-    <option value="Kemeli etek">Kemeli etek</option>
-    <option value="Kemer">Kemer</option>
-    <option value="Kepçe">Kepçe</option>
-    <option value="Keçe">Keçe</option>
-    <option value="Kılçık tabançası">Kılçık tabançası</option>
-    <option value="Kimono">Kimono</option>
-    <option value="Kirpik kıvırıcı">Kirpik kıvırıcı</option>
-    <option value="Kitap">Kitap</option>
-    <option value="Kitaplık">Kitaplık</option>
-    <option value="Kişisel bakım">Kişisel bakım</option>
-    <option value="Klavye">Klavye</option>
-    <option value="Kolluk">Kolluk</option>
-    <option value="Koltuk">Koltuk</option>
-    <option value="Koltuk-masa örtüsü">Koltuk-masa örtüsü</option>
-    <option value="Korse">Korse</option>
-    <option value="Koruyucu">Koruyucu</option>
-    <option value="Kot pantolon">Kot pantolon</option>
-    <option value="Kozmetik">Kozmetik</option>
-    <option value="Kravat">Kravat</option>
-    <option value="Kulak tıkacı">Kulak tıkacı</option>
-    <option value="Kulaklık">Kulaklık</option>
-    <option value="Kum kalıbı">Kum kalıbı</option>
-    <option value="Kumanda">Kumanda</option>
-    <option value="Kupa">Kupa</option>
-    <option value="Köpek maması">Köpek maması</option>
-    <option value="Külot">Külot</option>
-    <option value="Küpe">Küpe</option>
-    <option value="Kırtasiye">Kırtasiye</option>
-     <option value="Lego">Lego</option>
-    <option value="Lokum">Lokum</option>
-    <option value="Lambader">Lambader</option>
-    <option value="Lens">Lens</option>
-    <option value="Limon sıkacağı">Limon sıkacağı</option>
-    <option value="Macun">Macun</option>
-    <option value="Makyaj fırçası">Makyaj fırçası</option>
-    <option value="Mause">Mause</option>
-    <option value="Mikrofon">Mikrofon</option>
-    <option value="Motor">Motor</option>
-    <option value="Maclaren">Maclaren</option>
-    <option value="Makara">Makara</option>
-    <option value="Makina halısı">Makina halısı</option>
-    <option value="Makyaj seti">Makyaj seti</option>
-    <option value="Masa sandalye">Masa sandalye</option>
-    <option value="Masa takvimi">Masa takvimi</option>
-    <option value="Masa örtüsü">Masa örtüsü</option>
-    <option value="Masaj aleti">Masaj aleti</option>
-    <option value="Masaj şiltesi">Masaj şiltesi</option>
-    <option value="Maske">Maske</option>
-    <option value="Matara">Matara</option>
-    <option value="Mayo/bikini">Mayo/bikini</option>
-    <option value="Mendil">Mendil</option>
-    <option value="Mobilya">Mobilya</option>
-    <option value="Mont">Mont</option>
-    <option value="Mumluk">Mumluk</option>
-    <option value="Mutfak robotu">Mutfak robotu</option>
-    <option value="Mısır patlatma makinesi">Mısır patlatma makinesi</option>
-    <option value="Mızıka">Mızıka</option>
-    <option value="Nevresim">Nevresim</option>
-    <option value="Oyun halısı">Oyun halısı</option>
-    <option value="Olta makinesi">Olta makinesi</option>
-    <option value="Optik lens">Optik lens</option>
-    <option value="Organizer">Organizer</option>
-    <option value="Otomobil yedek parça">Otomobil yedek parça</option>
-    <option value="Oyun jeli">Oyun jeli</option>
-    <option value="Oyuncak">Oyuncak</option>
-    <option value="Oyuncu seti">Oyuncu seti</option>
-    <option value="Pasta servis seti">Pasta servis seti</option>
-    <option value="Puding">Puding</option>
-    <option value="Palto">Palto</option>
-    <option value="Pandispanya un">Pandispanya un</option>
-    <option value="Panduf">Panduf</option>
-    <option value="Pantolon">Pantolon</option>
-    <option value="Panço">Panço</option>
-    <option value="Pardesü">Pardesü</option>
-    <option value="Pareo">Pareo</option>
-     <option value="Patik">Patik</option>
-    <option value="Peeling">Peeling</option>
-    <option value="Penye">Penye</option>
-    <option value="Perde,panjur">Perde,panjur</option>
-    <option value="Peçete">Peçete</option>
-    <option value="Pijama">Pijama</option>
-    <option value="Pike takımı">Pike takımı</option>
-    <option value="Pipet">Pipet</option>
-    <option value="Porselen">Porselen</option>
-    <option value="Port Bebe">Port Bebe</option>
-    <option value="Portföy">Portföy</option>
-    <option value="Poşet">Poşet</option>
-    <option value="Printer">Printer</option>
-    <option value="Protez saç">Protez saç</option>
-    <option value="Pudra">Pudra</option>
-    <option value="Puf">Puf</option>
-    <option value="Puset">Puset</option>
-    <option value="Pazzle">Pazzle</option>
-    <option value="Qramofon">Qramofon</option>
-    <option value="Radyo">Radyo</option>
-    <option value="Raf">Raf</option>
-    <option value="Rende">Rende</option>
-    <option value="Renkli Muadil">Renkli Muadil</option>
-    <option value="Sabahlık">Sabahlık</option>
-     <option value="Sabun">Sabun</option>
-    <option value="Saç bandı">Saç bandı</option>
-    <option value="Saç boyama tozu">Saç boyama tozu</option>
-    <option value="Saksı">Saksı</option>
-    <option value="Sarj kablosu">Sarj kablosu</option>
-    <option value="Saz bağlama">Saz bağlama</option>
-    <option value="Sedye">Sedye</option>
-    <option value="Sehpa">Sehpa</option>
-    <option value="Slinq">Slinq</option>
-    <option value="Spor ayakkabı">Spor ayakkabı</option>
-    <option value="Suzgec">Suzgec</option>
-    <option value="Saat">Saat</option>
-    <option value="Sabun kalıbı">Sabun kalıbı</option>
-    <option value="Saklama kabı">Saklama kabı</option>
-    <option value="Saklama poşeti">Saklama poşeti</option>
-    <option value="Salopet">Salopet</option>
-    <option value="Sandalye kılıfı">Sandalye kılıfı</option>
-    <option value="Saç boyası">Saç boyası</option>
-    <option value="Saç makinesi">Saç makinesi</option>
-    <option value="Saç maskesi">Saç maskesi</option>
-    <option value="Sebil">Sebil</option>
-    <option value="Semaver">Semaver</option>
-    <option value="Servis seti">Servis seti</option>
-    <option value="Ses sistemi">Ses sistemi</option>
-    <option value="Seyahat seti">Seyahat seti</option>
-    <option value="Silgi">Silgi</option>
-    <option value="Siyah nokta temizleyici">Siyah nokta temizleyici</option>
-    <option value="Slikon">Slikon</option>
-    <option value="Spor ekipmanları">Spor ekipmanları</option>
-    <option value="Spor gidası">Spor gidası</option>
-    <option value="Spray">Spray</option>
-    <option value="Sprey">Sprey</option>
-    <option value="Stiker">Stiker</option>
-    <option value="Su filtresi">Su filtresi</option>
-    <option value="Su pompası">Su pompası</option>
-    <option value="Sütyen">Sütyen</option>
-    <option value="Süveter">Süveter</option>
-    <option value="Sıyırıcı">Sıyırıcı</option>
-    <option value="T-shirt">T-shirt</option>
-    <option value="Tepsi">Tepsi</option>
-    <option value="Toka">Toka</option>
-    <option value="Toplu iğne ">Toplu iğne </option>
-    <option value="Tuz">Tuz</option>
-    <option value="Tıraş bıçağı ">Tıraş bıçağı </option>
-    <option value="Un">Un</option>
-    <option value="Uydu alıcısı">Uydu alıcısı</option>
-    <option value="Uyku seti">Uyku seti</option>
-     <option value="Vücut terazi">Vücut terazi</option>
-    <option value="Valiz">Valiz</option>
-    <option value="Vinil kaplama">Vinil kaplama</option>
-    <option value="Vitamin">Vitamin</option>
-    <option value="Vizit kart">Vizit kart</option>
-    <option value="Vücut geliştiricisi">Vücut geliştiricisi</option>
-    <option value="Wrislet">Wrislet</option>
-    <option value="Yapıştırıcı suyu">Yapıştırıcı suyu</option>
-    <option value="Yastık kılıfı">Yastık kılıfı</option>
-    <option value="Yastık">Yastık</option>
-    <option value="Yatak tepsisi">Yatak tepsisi</option>
-    <option value="Yedek parça">Yedek parça</option>
-    <option value="Yelek">Yelek</option>
-    <option value="Yemek takımı">Yemek takımı</option>
-    <option value="Yorgan">Yorgan</option>
-    <option value="Yulaf">Yulaf</option>
-    <option value="Yüzme paleti">Yüzme paleti</option>
-    <option value="Abajur">Abajur</option>
-    <option value="Abakus">Abakus</option>
-    <option value="Abiye">Abiye</option>
-    <option value="Adaptör">Adaptör</option>
-    <option value="Albom">Albom</option>
-    <option value="Alez">Alez</option>
-    <option value="Alüminium list">Alüminium list</option>
-    <option value="Anorak">Anorak</option>
-    <option value="Aparat">Aparat</option>
-    <option value="Aslan pençesi">Aslan pençesi</option>
-    <option value="Aspirator">Aspirator</option>
-    <option value="Atkı bere takım">Atkı bere takım</option>
-    <option value="Ayakkabı kutusu">Ayakkabı kutusu</option>
-    <option value="Ayakkabı rampası">Ayakkabı rampası</option>
-    <option value="Balık yemi">Balık yemi</option>
-    <option value="Balon">Balon</option>
-    <option value="Bant">Bant</option>
-    <option value="Bebek arabası">Bebek arabası</option>
-    <option value="Bebek eğitim seti">Bebek eğitim seti</option>
-    <option value="Bebek giyim">Bebek giyim</option>
-    <option value="Bebek iç giyim">Bebek iç giyim</option>
-    <option value="Bebek sepeti">Bebek sepeti</option>
-    <option value="Bebek tulumu">Bebek tulumu</option>
-    <option value="Bellek">Bellek</option>
-    <option value="Beslenme çantası">Beslenme çantası</option>
-    <option value="Bisküvi">Bisküvi</option>
-    <option value="Body">Body</option>
-    <option value="Bot">Bot</option>
-    <option value="Boya">Boya</option>
-    <option value="Buhar makinesi">Buhar makinesi</option>
-    <option value="Buz makinesi">Buz makinesi</option>
-    <option value="Çatal">Çatal</option>
-    <option value="Çaydanlık">Çaydanlık</option>
-    <option value="Çerezlik">Çerezlik</option>
-    <option value="Cezve">Cezve</option>
-    <option value="Cibinlik">Cibinlik</option>
-    <option value="Çiçek">Çiçek</option>
-    <option value="Cihaz">Cihaz</option>
-    <option value="Cila">Cila</option>
-    <option value="Cilt bakım seti">Cilt bakım seti</option>
-    <option value="Civi">Civi</option>
-    <option value="Çocuk bisiklet">Çocuk bisiklet</option>
-     <option value="Cüzdan kemer anahtarlık set">Cüzdan kemer anahtarlık set</option>
-    <option value="Dart">Dart</option>
-    <option value="Daş">Daş</option>
-    <option value="Dental tools">Dental tools</option>
-    <option value="Dergi">Dergi</option>
-    <option value="Derma roller">Derma roller</option>
-    <option value="Dolap içi düzenleyici raf">Dolap içi düzenleyici raf</option>
-    <option value="Eğitim seti">Eğitim seti</option>
-    <option value="Ekmek kadayıf">Ekmek kadayıf</option>
-    <option value="Ekmeklik">Ekmeklik</option>
-    <option value="Elektrikli süpürge">Elektrikli süpürge</option>
-    <option value="Emzik zinciri">Emzik zinciri</option>
-    <option value="Emzirme aleti">Emzirme aleti</option>
-    <option value="Enstruman">Enstruman</option>
-    <option value="Erkek bakım seti">Erkek bakım seti</option>
-    <option value="Ev malzemesi">Ev malzemesi</option>
-    <option value="Filtre">Filtre</option>
-    <option value="Fincan">Fincan</option>
-    <option value="Fırça">Fırça</option>
-    <option value="Fondöten">Fondöten</option>
-    <option value="Fotoğraf makinesi">Fotoğraf makinesi</option>
-    <option value="Fren balatası">Fren balatası</option>
-    <option value="Giyim">Giyim</option>
-     <option value="Göz bandı">Göz bandı</option>
-    <option value="Gübre">Gübre</option>
-    <option value="Güllac">Güllac</option>
-    <option value="Güneş kremi">Güneş kremi</option>
-    <option value="Güveç">Güveç</option>
-    <option value="Halhal">Halhal</option>
-    <option value="Hamak">Hamak</option>
-    <option value="Harita">Harita</option>
-    <option value="Hava filtresi">Hava filtresi</option>
-    <option value="Haylayter">Haylayter</option>
-    <option value="Hayvan cilt bakım">Hayvan cilt bakım</option>
-    <option value="Hayvan yatağı">Hayvan yatağı</option>
-    <option value="Hazırlık seti">Hazırlık seti</option>
-    <option value="Hesap makinesi">Hesap makinesi</option>
-    <option value="Hurc">Hurc</option>
-    <option value="Ink">Ink</option>
-    <option value="Insan iskeleti">Insan iskeleti</option>
-    <option value="Iplik">Iplik</option>
-    <option value="Işık seti">Işık seti</option>
-    <option value="Jel">Jel</option>
-    <option value="Kablo">Kablo</option>
-    <option value="Kablosuz mouse">Kablosuz mouse</option>
-    <option value="Kahve fincan takımı">Kahve fincan takımı</option>
-    <option value="Kahve seti">Kahve seti</option>
-    <option value="Kakao tozu">Kakao tozu</option>
-    <option value="Kanguru">Kanguru</option>
-    <option value="Kapak">Kapak</option>
-    <option value="Kapı">Kapı</option>
-    <option value="Kapı aksesuarı">Kapı aksesuarı</option>
-    <option value="Karışık hazır malzeme">Karışık hazır malzeme</option>
-    <option value="Kaş kalemi">Kaş kalemi</option>
-    <option value="Kase">Kase</option>
-    <option value="Kask">Kask</option>
-    <option value="Kaşık">Kaşık</option>
-    <option value="Kedi köpek kulubesi">Kedi köpek kulubesi</option>
-    <option value="Kedi tırmalama">Kedi tırmalama</option>
-    <option value="Kepek">Kepek</option>
-    <option value="Kese">Kese</option>
-    <option value="Kitap (klasikler seti)">Kitap (klasikler seti)</option>
-    <option value="Kolanya">Kolanya</option>
-    <option value="Kolostomi torbası">Kolostomi torbası</option>
-    <option value="Kolye">Kolye</option>
-    <option value="Köpük">Köpük</option>
-    <option value="Korna">Korna</option>
-    <option value="Kozmetik kabı">Kozmetik kabı</option>
-    <option value="Kozmetik çantası">Kozmetik çantası</option>
-    <option value="Kraker">Kraker</option>
-     <option value="Krampon">Krampon</option>
-    <option value="Kredi kartlık">Kredi kartlık</option>
-    <option value="Krem">Krem</option>
-    <option value="Kulak çubuğu">Kulak çubuğu</option>
-    <option value="Kum">Kum</option>
-    <option value="Kumaş">Kumaş</option>
-    <option value="Kumbara">Kumbara</option>
-    <option value="Kuş yemi">Kuş yemi</option>
-    <option value="Kutu">Kutu</option>
-    <option value="Kutu seti">Kutu seti</option>
-    <option value="Led işık">Led işık</option>
-    <option value="Lens suyu">Lens suyu</option>
-    <option value="Limon qabı">Limon qabı</option>
-    <option value="Makas">Makas</option>
-    <option value="Makine">Makine</option>
-    <option value="Makyaj düzenleyici">Makyaj düzenleyici</option>
-    <option value="Mama kabı">Mama kabı</option>
-    <option value="Mama sandalyesi">Mama sandalyesi</option>
-    <option value="Mandal">Mandal</option>
-    <option value="Masa">Masa</option>
-    <option value="Masa örtüsü">Masa örtüsü</option>
-    <option value="Maskara">Maskara</option>
-    <option value="Mat">Mat</option>
-    <option value="Mayo">Mayo</option>
-     <option value="Maşa">Maşa</option>
-    <option value="Maşın şüşəsi">Maşın şüşəsi</option>
-    <option value="Metre">Metre</option>
-    <option value="Microcard">Microcard</option>
-    <option value="Mikser">Mikser</option>
-    <option value="Minder">Minder</option>
-    <option value="Modem">Modem</option>
-    <option value="Motor örtüsü">Motor örtüsü</option>
-    <option value="Mum">Mum</option>
-    <option value="Mutfak eşyaları">Mutfak eşyaları</option>
-    <option value="Mutfak seti">Mutfak seti</option>
-    <option value="Nargile seti">Nargile seti</option>
-    <option value="Nem alma cihazı">Nem alma cihazı</option>
-    <option value="Ofis koltuğu koruma plastiği">Ofis koltuğu koruma plastiği</option>
-    <option value="Olta kamisi">Olta kamisi</option>
-    <option value="Örtü">Örtü</option>
-    <option value="Oyun hamuru">Oyun hamuru</option>
-    <option value="Oyun kolu">Oyun kolu</option>
-    <option value="Oyun konsolu">Oyun konsolu</option>
-    <option value="Palet">Palet</option>
-    <option value="Papyon">Papyon</option>
-    <option value="Parfüm">Parfüm</option>
-    <option value="Parka">Parka</option>
-     <option value="Paspas">Paspas</option>
-    <option value="Paten">Paten</option>
-    <option value="Ped">Ped</option>
-    <option value="Peluş">Peluş</option>
-    <option value="Perde">Perde</option>
-    <option value="Peçetelik">Peçetelik</option>
-    <option value="Pikap">Pikap</option>
-    <option value="Piknik seti">Piknik seti</option>
-    <option value="Poster">Poster</option>
-    <option value="Protein">Protein</option>
-    <option value="Resim şovalyesi">Resim şovalyesi</option>
-    <option value="Rimel">Rimel</option>
-    <option value="Roll-on">Roll-on</option>
-    <option value="Ruj">Ruj</option>
-    <option value="Rüzgarlık">Rüzgarlık</option>
-    <option value="Saç bakım">Saç bakım</option>
-    <option value="Sakız">Sakız</option>
-    <option value="Salep">Salep</option>
-    <option value="Şampuan">Şampuan</option>
-    <option value="Satranc">Satranc</option>
-    <option value="Skuter">Skuter</option>
-    <option value="Seccade">Seccade</option>
-    <option value="Şeker">Şeker</option>
-    <option value="Sepet">Sepet</option>
-    <option value="Seramik hamur">Seramik hamur</option>
-    <option value="Sira aparatı">Sira aparatı</option>
-    <option value="Şişme havuz">Şişme havuz</option>
-    <option value="Silikon kalıp">Silikon kalıp</option>
-    <option value="Solar taş">Solar taş</option>
-    <option value="Solusyon">Solusyon</option>
-    <option value="Spor sütyen">Spor sütyen</option>
-    <option value="Su arıtma cihazı">Su arıtma cihazı</option>
-    <option value="Su ısıtıcı">Su ısıtıcı</option>
-    <option value="Sudoku">Sudoku</option>
-    <option value="Südyen yıkama aparatı">Südyen yıkama aparatı</option>
-    <option value="Suluk">Suluk</option>
-    <option value="Sünger">Sünger</option>
-    <option value="Sürahi">Sürahi</option>
-    <option value="Sütyen askısı">Sütyen askısı</option>
-    <option value="Sütyen topu ">Sütyen topu </option>
-    <option value="Sweatshirt">Sweatshirt</option>
-    <option value="t-shirt pantolon">t-shirt pantolon</option>
-    <option value="takım">takım</option>
-    <option value="tartı">tartı</option>
-    <option value="taş">taş</option>
-    <option value="tatlı kalıbı">tatlı kalıbı</option>
-    <option value="tava">tava</option>
-    <option value="tekmelik ">tekmelik </option>
-    <option value="temizlik seti">temizlik seti</option>
-    <option value="tesettür">tesettür</option>
-    <option value="tırnak kurutucu">tırnak kurutucu</option>
-    <option value="Toner">Toner</option>
-    <option value="Toz torbası">Toz torbası</option>
-    <option value="Tıraş makinesi">Tıraş makinesi</option>
-    <option value="Tuzluk">Tuzluk</option>
-    <option value="Un">Un</option>
-    <option value="USB">USB</option>
-    <option value="Uydu alıcı">Uydu alıcı</option>
-    <option value="Vantilatör">Vantilatör</option>
-    <option value="Vazo">Vazo</option>
-    <option value="Vida">Vida</option>
-    <option value="Vinil">Vinil</option>
-    <option value="Şekerlik">Şekerlik</option>
-    <option value="Yağ">Yağ</option>
-    <option value="Yağmurluk">Yağmurluk</option>
-    <option value="Yapıştırıcı">Yapıştırıcı</option>
-    <option value="Yatak">Yatak</option>
-    <option value="Yatak örtüsü">Yatak örtüsü</option>
-    <option value="Yedek başlık">Yedek başlık</option>
-    <option value="Yemek termosu">Yemek termosu</option>
-    <option value="Yulaf samanı">Yulaf samanı</option>
-     <option value="Yumuşatıcı">Yumuşatıcı</option>
-    <option value="Yüzme seti">Yüzme seti</option>
-    <option value="Yüzük">Yüzük</option>
-    <option value="Yüzük kutusu">Yüzük kutusu</option>
-    <option value="Zımba ">Zımba </option>
-    <option value="Çanta">Çanta</option>
-    <option value="Çatal kaşık bıçak seti">Çatal kaşık bıçak seti</option>
-    <option value="Çay ">Çay </option>
-    <option value="Çay seti">Çay seti</option>
-    <option value="Çerçeve">Çerçeve</option>
-    <option value="Çeyiz seti">Çeyiz seti</option>
-    <option value="Çikolata">Çikolata</option>
-    <option value="Çorap">Çorap</option>
-    <option value="Ölçüm çubuğu">Ölçüm çubuğu</option>
-    <option value="Ön tampon-lip">Ön tampon-lip</option>
-    <option value="Öğrenci seti">Öğrenci seti</option>
-    <option value="Ütü">Ütü</option>
-    <option value="Çadır">Çadır</option>
-    <option value="Çakmak">Çakmak</option>
-    <option value="Çalışma masası">Çalışma masası</option>
-    <option value="Çay makinesi">Çay makinesi</option>
-    <option value="Önlük">Önlük</option>
-    <option value="Insulin taşıma çantası">Insulin taşıma çantası</option>
-     <option value="Islak mendil">Islak mendil</option>
-    <option value="Iç giyim">Iç giyim</option>
-    <option value="Şal eşarp">Şal eşarp</option>
-    <option value="Şapka">Şapka</option>
-    <option value="Şarj cihazı">Şarj cihazı</option>
-    <option value="Şarjör kılıfı">Şarjör kılıfı</option>
-    <option value="Şarzlı diş fırçası">Şarzlı diş fırçası</option>
-    <option value="Şemsiye">Şemsiye</option>
-    <option value="Şerit">Şerit</option>
-    <option value="Şort">Şort</option>
-    <option value="Şamdan">Şamdan</option>
-    <option value="Şezlonq">Şezlonq</option>
-    <option value="Şişe">Şişe</option>
-    <option value="Ştativ">Ştativ</option>
-    <option value="">Tayt</option>
-    <option value="">Tunik</option>
-    <option value="">Tulum</option>
-    <option value="">Çay</option>
-    <option value="">bebek maması</option>
-    <option value="">Tablo</option>
-    </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" data-select2-id="1278" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-slfatura_0-yh-container"><span class="select2-selection__rendered" id="select2-slfatura_0-yh-container" role="textbox" aria-readonly="true" title="Kateqoriya seçin">Kateqoriya seçin</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-12 col-md-4 col-lg-4">
-    <label>Rəngi</label>
-    <div class="input-group">
-    <input placeholder="Rəng" name="note_color_0" class="notes form-control" required="">
-    </div>
-    </div>
-    <div class="col-12 col-md-4 col-lg-4">
-    <label>Ölçüsü</label>
-    <div class="input-group">
-    <input placeholder="Ölçüsü" name="note_size_0" class="notes form-control" required="">
-    </div>
-    </div>
-    <div class="col-12 col-md-4 col-lg-4">
-    <label>Əlavə qeyd</label>
-    <div class="input-group">
-    <textarea placeholder="Əlavə qeyd" name="notes_0" class="notes form-control"></textarea>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-md-2">
-    <button id="addNewRow" role="button" class="custom-btn cbtn-yellow  cbtn-shadow"> <i class="fa fa-plus"></i> Yeni link</button>
-    </div>
-    <div class="col-md-3" style="margin:0 auto">
-    <div class="checkbox">
-    <input type="checkbox" id="try_quide" class="css-checkbox">
-    <label for="try_quide" class="css-label">Türkiyə daxili kuryer xərci ilə razıyam</label>
-    </div>
-    <div class="checkbox">
-    <input type="checkbox" id="qayda" class="css-checkbox">
-    <label for="qayda" class="css-label">Qaydalarla <span id="qaydaText" style="text-decoration: underline;cursor: pointer;color: #6e6e6e;">Razıyam</span></label>
-    </div>
-    </div>
-    <div class="col-md-1" style="margin:0 auto">
-    </div>
-    <div class="col-md-3" style="margin:0 auto">
-    <div class="checkbox">
-    <input type="checkbox" name="fast_order" id="pay_9" class="css-checkbox">
-    <label for="pay_9" class="css-label">Sürətli sifariş </label>
-    </div>
-    </div>
-    <div class="col-md-3" style="padding-right:5px;">
-    <button disabled="" type="submit" id="btnSubmit" class="custom-btn cbtn-sky text-uppercase cbtn-shadow pull-right">SİFARİŞ EDİN</button>
-    </div>
-    </div>
-    </form>
-    </div>
-     </div>
-    </div>
-    </div>
-    
-    </div>
-    </div>
-    </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer id="footer">
+  <footer id="footer">
     <div class="footer-content">
     <div class="container">
     <div class="row">
@@ -1757,14 +436,9 @@ border-color: #f3944a;"> Sifariş et</button>
     </div>
     </div>
     </div>
-    <div class="copyright-content">
-    <div class="container">
-    <div class="copyright-text text-center">&copy; 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="http://www.inspiro-media.com/" target="_blank" rel="noopener"> INSPIRO</a> </div>
-    </div>
-    </div>
     </footer>
     
-    </div>
+    
     
     
     <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
@@ -1774,17 +448,9 @@ border-color: #f3944a;"> Sifariş et</button>
     <script src="js/plugins.js"></script>
     
     <script src="js/functions.js"></script>
+    <script src="js/modal.js"></script>
     <script>
-        $('.multi-field-wrapper').each(function() {
-    var $wrapper = $('.multi-fields', this);
-    $(".add-field", $(this)).click(function(e) {
-        $('.multi-field:first-child', $wrapper).clone(true).appendTo($wrapper).find('input').val('').focus();
-    });
-    $('.multi-field .remove-field', $wrapper).click(function() {
-        if ($('.multi-field', $wrapper).length > 1)
-            $(this).parent('.multi-field').remove();
-    });
-});
+    
     </script>
     </body>
     
